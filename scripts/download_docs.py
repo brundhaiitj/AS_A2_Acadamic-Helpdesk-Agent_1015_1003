@@ -6,6 +6,10 @@ STEP: Download all official IIT Jodhpur documents listed in data/csv/sources.csv
 - PDFs are saved as-is.
 - Web pages are converted to clean text (.txt) so they can be indexed.
 - Rows with type 'manual' must be downloaded by hand (instructions are printed).
+
+If you get SSL / certificate errors:   pip install truststore   and run again.
+If it still fails:                     python scripts/download_docs.py --insecure
+(--insecure skips the certificate check ONLY for these public iitj.ac.in documents)
 """
 import csv
 import re
@@ -15,6 +19,17 @@ from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+
+try:  # use the operating system's certificate store (fixes most SSL errors on Mac)
+    import truststore
+    truststore.inject_into_ssl()
+except ImportError:
+    pass
+
+INSECURE = "--insecure" in sys.argv
+if INSECURE:
+    import urllib3
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "data" / "docs"
@@ -56,7 +71,7 @@ def main():
             ok.append(row["file"])
             continue
         try:
-            r = requests.get(row["url"], headers=HEADERS, timeout=60)
+            r = requests.get(row["url"], headers=HEADERS, timeout=60, verify=not INSECURE)
             r.raise_for_status()
             if row["type"] == "pdf":
                 if not r.content.startswith(b"%PDF"):
@@ -69,12 +84,15 @@ def main():
             print(f"  ok   {row['file']:<50} {out.stat().st_size // 1024} KB")
             ok.append(row["file"])
         except Exception as e:
-            print(f"  FAIL {row['file']:<50} {e}")
+            print(f"  FAIL {row['file']:<50} {str(e)[:120]}")
+            row["error"] = str(e)
             failed.append(row)
         time.sleep(1)  # be polite to the server
 
     print("\n" + "=" * 70)
     print(f"Downloaded/present: {len(ok)}   Failed: {len(failed)}   Manual: {len(manual)}")
+    if failed and any("SSL" in str(r.get("error", "")) for r in failed):
+        print("\nSSL errors: run  pip install truststore  and try again, or use:  python scripts/download_docs.py --insecure")
     if failed:
         print("\nOpen these links in your browser and save them into data/docs with EXACTLY this name:")
         for row in failed:

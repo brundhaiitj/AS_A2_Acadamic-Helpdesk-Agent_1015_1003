@@ -1,0 +1,119 @@
+B.Tech Chemical Engineering - semester-wise courses (Office of Academics)
+Source: https://iitj.ac.in/Office-of-Academics/en/B.Tech.-Chemical-Engineering
+Downloaded: 2026-10-29
+
+B.Tech. Chemical Engineering
+1st Semester (B.Tech. CH) | Category | Course Name | L-T-P | Credits
+1 | IE | Engineering Mechanics | 2-1-0 | 3.0
+2 | IS | Chemistry | 3-0-0 | 3.0
+3 | IS | Physics | 3-0-0 | 3.0
+4 | IS | Chemistry Lab | 0-0-2 | 1.0
+5 | IS | Physics Lab | 0-0-2 | 1.0
+6 | IS | Mathematics I | 3-1-0 | 4.0
+7 | IE | Engineering Visualization | 0-0-2 | 1.0
+8 | NE | Engineering Design I | 0-0-2 | 1.0
+9 | NH | Communication Skill I | 0-0-2 | 1.0
+10 | NH | Social Connect and responsibilities I | 0-0-1 | 0.5
+11 | NH | Performing Arts I /Sports I | 0-0-1 | 0.5
+| Total Graded | 16.0
+| Total Non-Graded | 3.0
+2nd Semester (B.Tech. CH) | Category | Course Name | L-T-P | Credits
+1 | IE | Introduction to Electrical Engineering | 3-0-2 | 4
+2 | IE | Introduction to Computer Science | 3-0-2 | 4
+3 | IE | Introduction to Bioengineering | 3-0-2 | 4
+4 | IS | Mathematics II | 3-1-0 | 4
+5 | IE | Engineering Realization | 0-0-2 | 1
+6 | NE | Engineering Design II | 0-0-2 | 1
+7 | NH | Communication Skill II | 0-0-2 | 1
+8 | NH | Social Connect and responsibilities II | 0-0-1 | 0.5
+9 | NH | Performing Arts II/Sports II | 0-0-1 | 0.5
+10 | - | - | - | -
+| Total Graded | 17
+| Total Non-Graded | 3
+3rd Semester (B.Tech. CH) | Category | Course Name | L-T-P | Credits
+1 | LS | Probability, Statistics & Stochastic Process | 3-1-0 | 4
+2 | IE | Thermodynamics | 3-1-0 | 4
+3 | PC | Fluid Mechanics | 3-1-0 | 4
+4 | IE | Introduction to Machine Learning | 3-0-2 | 4
+5 | LS | Physics of Complex Fluids | 3-0-0 | 3
+6 | NE | Intro. To Profession | 0-0-2 | 1
+| Total Graded | 19
+| Total Non-Graded | 1
+4th Semester (B.Tech. CH) | Category | Course Name | L-T-P | Credits
+1 | IE | Materials Fractals: Polymer,Corrosion,Colloids & suspensions | 3 x 1-0-0 | 3
+2 | IE | Signals & Systems | 3-1-0 | 4
+3 | PC | Data Structure and Algorithm | 3-0-2 | 4
+4 | PC | Molecular Engineering | 3-0-0 | 3
+5 | PC | Material and Energy Balance | 3-0-0 | 3
+6 | IH | Humanities | 3-0-0 | 3
+| Total Graded | 20
+| Total Non-Graded | 0
+5th Semester (B.Tech. CH) | Category | Course Name | L-T-P | Credits
+1 | PC | Mass Transfer I | 3-0-3 | 4.5
+2 | PC | Heat Transfer | 3-0-0 | 3.0
+3 | PC | Chemical Reaction Engineering | 3-0-3 | 4.5
+4 | PC | Scientific Computations | 3-0-2 | 4.0
+5 | PC | Chemical Engineering Thermodynamics | 3-0-0 | 3.0
+6 | PC | Heat Transfer Lab | 0-0-2 | 1.0
+7 | IH | Humanities II | 3-0-0 | 3.0
+8 | NH | Professional Ethics I | 1-0-1 | 1.0
+| Total Graded | 23.0
+| Total Non-Graded | 1.0
+6th Semester (B.Tech. CH) | Category | Course Name | L-T-P | Credits
+1 | PC | Mass transfer II | 3-0-3 | 4.5
+2 | PC | Process Plant Design & Economics | 3-0-3 | 4.5
+3 | PC | Transport Phenomena | 3-0-1 | 4
+4 | PC | Process Control and AI Applications | 3-0-2 | 4
+5 | PC | Fluid Mechanics Lab | 0-0-2 | 1
+6 | PE | Programme Elective-1 | 3-0-0 | 3
+7 | NH | Professional Ethics II | 0-1-0 | 1
+8 | - | - | - | -
+| Total Graded | 21
+| Total Non-Graded | 1
+7th Semester (B.Tech. CH) | Category | Course Name | L-T-P | Credits
+1 | PP | B. Tech. Project | 0-0-6 | 3
+2 | PE | Programme Elective-2 | 3-0-0 | 3
+3 | PE | Programme Elective-3 | 3-0-0 | 3
+4 | OE | Open Elective-1 | 3-0-0 | 3
+5 | IH | Humanities III | 3-0-0 | 3
+6 | IS | Environmental Science | 2-0-2 | 2
+| Total Graded | 17
+| Total Non-Graded | 0
+8th Semester (B.Tech. CH) | Category | Course Name | L-T-P | Credits
+1 | PE | Programme Elective-4 | 3-0-0 | 3
+2 | PE | Programme Elective 5 | 2-0-0 | 2
+3 | PE | Programme Elective-6 | 2-0-0 | 2
+4 | IH | Humanities IV | 3-0-0 | 3
+5 | OE | Open Elective-2 | 3-1-0 | 4
+6 | OE | Open Elective-3 | 3-0-0 | 3
+| Total Graded | 17
+| Total Non-Graded | 0
+Important links
+CCCD @ IITJ
+Recruitment
+Correspondence
+RTI
+Tenders
+Techscape
+Contact
+Old Website
+NCCR Portal
+How To Reach IITJ
+Institute Repository
+Donations
+Web Policy
+Web Information Manager
+Feedback
+CERT-IN
+Help
+NIRF
+Internal Committee
+Intranet Links
+Copyright © 2025 All Rights Reserved | This Portal is Owned, Designed, and Developed by
+Digital Infrastructure & Automation
+, IIT Jodhpur.
+N.H. 62, Nagaur Road, Karwar, Jodhpur - 342030, Rajasthan (India)
+For any comments/enquiries/feedback, please email the
+WIM
+.
+Last Updated : 26 Oct 2026 - 02:21 PM

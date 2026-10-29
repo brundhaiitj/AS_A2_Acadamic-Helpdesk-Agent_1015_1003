@@ -1,0 +1,89 @@
+CSE Department - Undergraduate Programs (B.Tech CSE and AIDE)
+Source: https://www.iitj.ac.in/computer-science-engineering/en/undergraduate-programs
+Downloaded: 2026-10-29
+
+Undergraduate Programs
+B.Tech. Computer Science and Engineering (CSE)
+The traditional curriculum in Computer Science and Engineering (CSE) has focused on two major areas, 
+i.e., theory and systems (viz. database, computer hardware, and operating systems). With the advent of 
+the era of Edge Computing, Cloud Computing, Cyber Security, Artificial Intelligence (AI), and Big Data, the 
+discipline has now transformed into one that is instrumental in solving major real-world problems faced 
+by modern society such as healthcare, security, sustainability, and socio-economic challenges. The new 
+B.Tech programme in CSE will prepare its students to tackle problems which are fundamentally 
+multidisciplinary in nature, through the application of core Computer Science skills. Which in turn would 
+enhance IIT Jodhpur’s contribution to providing solutions towards an Atma Nirbhar and Viksit Bharat, 
+and global Sustainable Development Goals.
+The new curriculum in B.Tech. in CSE at IIT Jodhpur has aimed to be balanced in its theoretical and 
+practical offerings, and is broadly organized around 3 focus areas:
+Theoretical Computer Science –
+To provide foundational knowledge in the design and analysis of 
+algorithms for efficient problem solving.
+Systems –
+To provide skills (theoretical and hands on) for the comprehension, design and realization 
+of effective computing systems; bridging the gap between software and hardware components.
+AI / ML –
+To equip students with expertise in the design and realization of trustworthy systems in a 
+world that is increasingly being driven by AI and machine learning, and their many derivatives across 
+domains.
+Detailed curriculum for B.Tech. CSE (AY 2026 onwards)
+(Download file: 605 KB)
+Detailed curriculum for B.Tech. CSE
+(Download file: 633 KB)
+Details of courses offered by Dept. CSE
+(Download file: 908 KB)
+Specializations
+(Download file: 244 KB)
+Regulations for Undergraduate Programs
+(Download file: 536 KB)
+B.Tech. Artificial Intelligence and Data Science (
+AIDE
+)
+This BTech program combines two broad areas, Artificial Intelligence and Data Science, while 
+building a strong foundation in Computer Science. Artificial Intelligence (AI) aims to create 
+machines to act with higher levels of intelligence and emulate the human capabilities of sense, 
+comprehend and act. On the other hand, Data Science (DE) is the art of generating insight, 
+knowledge and predictions by processing data pertaining to a system or a process. As the demand 
+for these areas increases, there is also an increasing need for building the future workforce for 
+Artificial Intelligence and Data Science. IIT Jodhpur will offer this unique program to develop the 
+Artificial Intelligence and Data Science ecosystem in the country. The curriculum includes courses 
+in computer science, mathematics, artificial intelligence, machine learning, and their applications in 
+various domains.
+Detailed curriculum for B.Tech. AIDE (AY 2026 onwards)
+(Download file: 2020 KB)
+Detailed curriculum for B.Tech. AIDE
+(Download file: 511 KB)
+Details of courses offered by Dept. CSE
+(Download file: 908 KB)
+Specializations
+(Download file: 244 KB)
+Regulations for Undergraduate Programs
+(Download file: 536 KB)
+Important links
+CCCD @ IITJ
+Recruitment
+Correspondence
+RTI
+Tenders
+Techscape
+Contact
+Old Website
+NCCR Portal
+How To Reach IITJ
+Institute Repository
+Donations
+Web Policy
+Web Information Manager
+Feedback
+CERT-IN
+Help
+NIRF
+Internal Committee
+Intranet Links
+Copyright © 2025 All Rights Reserved | This Portal is Owned, Designed, and Developed by
+Digital Infrastructure & Automation
+, IIT Jodhpur.
+N.H. 62, Nagaur Road, Karwar, Jodhpur - 342030, Rajasthan (India)
+For any comments/enquiries/feedback, please email the
+WIM
+.
+Last Updated : 27 Oct 2026 - 03:40 PM
