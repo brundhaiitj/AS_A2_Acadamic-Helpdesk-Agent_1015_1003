@@ -21,3 +21,32 @@ IIT Jodhpur
 
 [Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",draft_email,academic_helpdesk,105.8,,2026-10-29 18:48:28
 single_qwen3-8b,single,qwen3:8b,1,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,11.0,,2026-10-29 18:50:14
+single_qwen3-8b,single,qwen3:8b,1,Q01,policy,What is the attendance requirement to sit in the Major exam?,"The attendance requirement to sit in the Major exam is that a student's attendance should not fall below 75% in a course. If a student's attendance is below 75%, they will still be allowed to appear for the exams, but they will need to score at least a C grade to pass the course. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",search_documents,academic_helpdesk,317.0,,2026-10-29 20:46:19
+single_qwen3-8b,single,qwen3:8b,1,Q03,policy,What are the minimum and maximum credits a UG student can register for in a semester?,"The minimum number of credits a UG student can register for in a semester is 12, and the maximum is 25. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 15]",search_documents,academic_helpdesk,174.7,,2026-10-29 20:51:36
+single_qwen3-8b,single,qwen3:8b,1,Q04,policy,What is the maximum duration allowed to complete the B.Tech. program?,"The maximum duration allowed to complete the B.Tech. program is 14 registered semesters [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 14].",search_documents,academic_helpdesk,176.2,,2026-10-29 20:54:31
+single_qwen3-8b,single,qwen3:8b,1,Q05,policy,Within how many days must I apply for a make-up examination and to whom?,"You must apply for a make-up examination within ten days from the date of the missed examination. The application should be made to the Dean (Academics) through the course instructor. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 13]",search_documents,academic_helpdesk,142.1,,2026-10-29 20:57:27
+single_qwen3-8b,single,qwen3:8b,1,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"A UG student can take a maximum of 10 days of short leave on medical grounds during the semester. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 17]",search_documents,academic_helpdesk,156.7,,2026-10-29 20:59:49
+single_qwen3-8b,single,qwen3:8b,1,Q07,policy,How many grade points is an A- grade worth?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,10.9,,2026-10-29 21:02:26
+single_qwen3-8b,single,qwen3:8b,1,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"A general category B.Tech student must earn a minimum of 80 credits by the end of the second semester to continue in the program [Source: Academic Regulations (students enrolled from July 2020 onwards), p. 17].",search_documents,academic_helpdesk,170.0,,2026-10-29 21:02:37
+single_qwen3-8b,single,qwen3:8b,1,Q14,schedule,When are the Minor examinations in Semester I of 2026-27?,"The Minor examinations in Semester I of 2026-27 are scheduled from 21-22 May 2026 [Source: Academic Calendar Summer Term 2026, p. 1].",search_documents,academic_helpdesk,228.1,,2026-10-29 21:05:27
+single_qwen3-8b,single,qwen3:8b,1,Q18,schedule,How many 400 level electives have been floated by the Humanities department in this semester?,"The Humanities department has floated 6 electives at the 400 level in this semester. The courses are: Introduction to Philosophy, Fundamentals of Logic, Critical Thinking, Theories of Justice, Gandhian Thought, and Role of Technology in Development. [Source: Course & Timetable list (data/csv/courses.csv)]",count_electives,academic_helpdesk,52.7,,2026-10-29 21:09:15
+single_qwen3-8b,single,qwen3:8b,1,Q22,email,Draft an email to the instructor of MAL1010 asking for permission to take the make-up exam for the Minor because I was hospitalised.,"This is a draft and has NOT been sent.  
+
+To: k.r.hiremath@iitj.ac.in  
+Subject: Request for permission to take make-up examination - MAL1010  
+
+Dear Prof. Kirankumar Hiremath,  
+
+I could not appear for the examination of MAL1010 - Mathematics I due to the following reason: I was hospitalised and unable to take the Minor exam.  
+
+I kindly request your permission and recommendation to take the make-up examination. I will attach the required medical certificate / supporting documents.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",draft_email,academic_helpdesk,97.0,,2026-10-29 21:10:08
+single_qwen3-8b,single,qwen3:8b,1,Q26,out_of_scope,What is the best way to reach the campus from Jodhpur city center?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,11.8,,2026-10-29 21:11:45

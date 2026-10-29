@@ -5,3 +5,5 @@ timestamp,question,reason,model,status
 2026-10-29T18:50:25,What are the available dining options on the campus?,refused by agent (auto-logged),qwen3:8b,pending human answer
 2026-10-29T20:36:37,What are the available dining options on the campus?,out of scope,qwen3:8b,pending human answer
 2026-10-29T20:37:04,What is the best way to reach the campus from Jodhpur city center?,out of scope,qwen3:8b,pending human answer
+2026-10-29T21:02:37,How many grade points is an A- grade worth?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T21:11:56,What is the best way to reach the campus from Jodhpur city center?,refused by agent (auto-logged),qwen3:8b,pending human answer
