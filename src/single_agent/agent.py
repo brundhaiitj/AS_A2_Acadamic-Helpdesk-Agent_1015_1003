@@ -15,6 +15,7 @@ from google.adk.models.lite_llm import LiteLlm
 
 import config
 from prompts import SINGLE_AGENT_INSTRUCTION
+from guardrails import clean_model_reply, remember_logging
 from tools import ALL_TOOLS
 
 litellm.drop_params = True          # ignore settings a model does not support
@@ -26,4 +27,6 @@ root_agent = Agent(
     description="IIT Jodhpur academic helpdesk: rules, curriculum, time table and instructor emails.",
     instruction=SINGLE_AGENT_INSTRUCTION,
     tools=ALL_TOOLS,
+    after_tool_callback=remember_logging,      # see guardrails.py
+    after_model_callback=clean_model_reply,
 )

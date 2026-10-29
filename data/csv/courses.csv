@@ -1,5 +1,5 @@
 course_code,course_name,department,category,credits,ltp,slot,instructor,instructor_email,classroom,semester,data_status
-CSL7570,Autonomous Systems,CS,elective,3,3-0-0,J,Instructor CSL7570 (dummy),csl7570.instructor@iitj.ac.in,LHC 105,AY 2026-27 Sem I,dummy - verify on ERP
+CSL7570,Autonomous Systems,CS,elective,3,3-0-0,E,Instructor CSL7570 (dummy),csl7570.instructor@iitj.ac.in,LHC 105,AY 2026-27 Sem I,verified - ERP (email dummy)
 CHL7310,Chemometrics,CH,elective,3,3-0-0,H,Instructor CHL7310 (dummy),chl7310.instructor@iitj.ac.in,LHC 208,AY 2026-27 Sem I,dummy - verify on ERP
 CHL3010,Mass Transfer - II,CH,programme compulsory,4,3-1-0,B,Instructor CHL3010 (dummy),chl3010.instructor@iitj.ac.in,LHC 104,AY 2026-27 Sem I,dummy - verify on ERP
 CHL3020,Chemical Reaction Engineering - II,CH,programme compulsory,3,3-0-0,C,Instructor CHL3020 (dummy),chl3020.instructor@iitj.ac.in,LHC 104,AY 2026-27 Sem I,dummy - verify on ERP

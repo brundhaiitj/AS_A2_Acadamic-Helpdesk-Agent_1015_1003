@@ -97,7 +97,7 @@ def search_documents(query: str) -> dict:
     from embeddings import embed_texts
     try:
         vector = embed_texts([query], kind="query")[0]
-        res = _collection().query(query_embeddings=[vector], n_results=config.TOP_K)
+        res = _collection().query(query_embeddings=[vector], n_results=config.TOP_K * 2)
     except Exception as e:
         return {"status": "error", "message": f"Search failed: {e}. Has ingest.py been run?"}
 
@@ -111,6 +111,13 @@ def search_documents(query: str) -> dict:
             "year": meta.get("year"),
             "relevance": round(1 - float(dist), 3),
         })
+    # small bonus for newer documents so that the latest rule/calendar ranks first
+    for r in results:
+        m = re.search(r"(20\d\d)", str(r.get("year") or ""))
+        r["score"] = r["relevance"] + (0.004 * (int(m.group(1)) - 2019) if m else 0)
+    results = sorted(results, key=lambda r: r["score"], reverse=True)[:config.TOP_K]
+    for r in results:
+        r.pop("score", None)
     return {"status": "ok", "query": query, "results": results,
             "how_to_cite": "[Source: <source>, p. <page>]"}
 
