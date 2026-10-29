@@ -12,8 +12,8 @@ rules and regulations, the time table and academic calendar, and drafts emails t
 ## Project status
 | Part | Owner | Status |
 |---|---|---|
-| Part 1 – documents, CSV data, RAG, tools, single agent, question set | Person 1 | in progress |
-| Part 2 – multi-agent version, evaluation, model comparison, report | Person 2 | not started |
+| Part 1 – documents, CSV data, RAG, tools, single agent, question set | Person 1 | done |
+| Part 2 – multi-agent version, evaluation, model comparison, report | Person 2 | done (subset evaluation, see report) |
 
 ## Setup
 ```bash
@@ -37,7 +37,22 @@ python src/ingest.py             # builds chroma_db/
 ```bash
 adk web src                      # browser UI at http://localhost:8000 -> choose an agent
 python src/chat.py               # terminal chat with the single agent
+python src/chat.py --agent multi # terminal chat with the multi-agent system
 ```
+
+## Multi-agent system
+`helpdesk_orchestrator` routes each question with `transfer_to_agent` to `policy_agent` (rules, credits,
+curriculum), `schedule_agent` (slots, electives, calendar) or `email_agent` (instructor emails, drafts), and
+refuses + logs out-of-scope questions itself. Code: `src/multi_agent/`.
+
+## Evaluation
+```bash
+python eval/run_eval.py --agent multi  --runs 3 --model qwen3:8b      # or llama3.1:8b, --ids Q01,Q13 for a subset
+python eval/run_eval.py --agent single --runs 1 --model qwen3:8b
+python eval/score.py       # results/scored_all.csv (accuracy, groundedness, refusals, tool/routing)
+python eval/analyze.py     # results/summary.md, consistency.csv, chart_*.png
+```
+Report: `report/report.md`.
 Switch the LLM: set `HELPDESK_MODEL=llama3.1:8b` (or edit `src/config.py`).
 
 ## Tests
@@ -56,8 +71,12 @@ src/ingest.py         chunk + embed + store in ChromaDB
 src/tools.py          the 6 tools used by the agents
 src/prompts.py        agent instructions
 src/single_agent/     base version (one agent, all tools)
+src/multi_agent/      orchestrator + policy / schedule / email agents
+src/guardrails.py     removes thinking text, guarantees refusals are logged
 src/runner.py         run any agent on a question (used by tests / evaluation)
 eval/questions.csv    30 evaluation questions with expected answers and sources
+eval/answer_keys.csv  key facts + expected agent per question
+eval/run_eval.py      runs questions through an agent; score.py / analyze.py score and summarise
 logs/                 unanswered_log.csv (questions referred to a human)
 outputs/email_drafts/ generated email drafts (never sent)
 results/              test and evaluation outputs

@@ -1,0 +1,5 @@
+category,multi_qwen3-8b,single_qwen3-8b
+email,,100.0
+out_of_scope,,100.0
+policy,75.0,100.0
+schedule,,100.0

@@ -1,0 +1,29 @@
+nohup: ignoring input
+Config multi_qwen3-8b: 30 questions x 2 runs  ->  results/raw_multi_qwen3-8b.csv
+
+[1/60] run 1 Q01: What is the attendance requirement to sit in the Major exam?
+App "academic_helpdesk" can transfer between agents but has no context_cache_config. Every transfer swaps the system instruction and the tool set, so the request prefix changes and the whole prompt is re-sent uncached after each transfer. Set context_cache_config on the app to give each agent its own cache.
+     -> The attendance requirement to sit in the Major exam is that a student's attendance should not fall below 75% in a course. If a student's attendance is
+        agents=['helpdesk_orchestrator', 'policy_agent'] tools=['transfer_to_agent', 'search_documents'] (210.6 s)
+[2/60] run 1 Q02: How many Open Elective credits do I need to earn in order to get a B.T
+     -> Students in the regular B.Tech programme are required to complete 12 credits of open elective courses. [Source: B.Tech Computer Science and Engineerin
+        agents=['helpdesk_orchestrator', 'policy_agent'] tools=['transfer_to_agent', 'search_documents'] (180.3 s)
+[3/60] run 1 Q03: What are the minimum and maximum credits a UG student can register for
+     -> The minimum number of credits a UG student can register for in a semester is 12, and the maximum is 25. [Source: IIT Jodhpur Academic Regulations - UG
+        agents=['helpdesk_orchestrator', 'policy_agent'] tools=['transfer_to_agent', 'search_documents'] (201.0 s)
+[4/60] run 1 Q04: What is the maximum duration allowed to complete the B.Tech. program?
+     -> The maximum duration allowed to complete the B.Tech. program is 14 registered semesters. [Source: IIT Jodhpur Academic Regulations - UG and PG (web ve
+        agents=['helpdesk_orchestrator', 'policy_agent'] tools=['transfer_to_agent', 'search_documents'] (364.5 s)
+[5/60] run 1 Q05: Within how many days must I apply for a make-up examination and to who
+     -> You must apply for a make-up examination within ten days from the date of the missed examination. The application should be made to the Dean (Academic
+        agents=['helpdesk_orchestrator', 'policy_agent'] tools=['transfer_to_agent', 'search_documents'] (331.8 s)
+[6/60] run 1 Q06: How many days of short leave can a UG student take on medical grounds?
+     -> A UG student can take a maximum of 10 days of short leave on medical grounds during the semester. [Source: IIT Jodhpur Academic Regulations - UG and P
+        agents=['helpdesk_orchestrator', 'policy_agent'] tools=['transfer_to_agent', 'search_documents'] (181.4 s)
+[7/60] run 1 Q07: How many grade points is an A- grade worth?
+     -> An A- grade is worth 9 grade points. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 7]
+        agents=['helpdesk_orchestrator', 'policy_agent'] tools=['transfer_to_agent', 'search_documents'] (202.0 s)
+[8/60] run 1 Q08: How many credits must a general category B.Tech student earn by the en
+     -> A general category B.Tech student must earn a minimum of 75 credits by the end of the second semester to continue in the program. [Source: Rules and R
+        agents=['helpdesk_orchestrator', 'policy_agent'] tools=['transfer_to_agent', 'search_documents'] (195.3 s)
+[9/60] run 1 Q09: What is the maximum number of credits I can register for in the summer

@@ -1,0 +1,3 @@
+config,agent,model,runs,answers,accuracy_%,accuracy_in_scope_%,groundedness_%,citation_present_%,correct_refusal_%,false_refusal_%,refusals_logged_%,tool_correct_%,routing_correct_%,avg_seconds,errors
+multi_qwen3-8b,multi,qwen3:8b,1,8,75.0,75.0,75.0,100.0,,0.0,,100.0,100.0,233.4,0
+single_qwen3-8b,single,qwen3:8b,1,4,100.0,100.0,100.0,100.0,100.0,0.0,100.0,100.0,,112.5,0

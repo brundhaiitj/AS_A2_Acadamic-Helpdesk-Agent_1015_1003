@@ -1,0 +1,31 @@
+config,agent,model,run,id,category,question,answer,tools_used,agents_used,seconds,error,accuracy_auto,grounded,cited,refused,refusal_correct,logged,tool_correct,routing_correct,manual_accuracy
+multi_qwen3-8b,multi,qwen3:8b,1,Q01,policy,What is the attendance requirement to sit in the Major exam?,"The attendance requirement to sit in the Major exam is that a student's attendance should not fall below 75% in a course. If a student's attendance is below 75%, they will still be allowed to appear for the exams, but they must score at least a C grade to pass the course. If their marks are lower than the cut-off for a C grade, they will be awarded an F grade. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,210.6,,1,1,1,0,1,,1,1,0
+multi_qwen3-8b,multi,qwen3:8b,1,Q02,policy,How many Open Elective credits do I need to earn in order to get a B.Tech. degree?,"Students in the regular B.Tech programme are required to complete 12 credits of open elective courses. [Source: B.Tech Computer Science and Engineering UG Curriculum (2026 onwards), p. 9]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,180.3,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q03,policy,What are the minimum and maximum credits a UG student can register for in a semester?,"The minimum number of credits a UG student can register for in a semester is 12, and the maximum is 25. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 15]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,201.0,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q04,policy,What is the maximum duration allowed to complete the B.Tech. program?,"The maximum duration allowed to complete the B.Tech. program is 14 registered semesters. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 14]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,364.5,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q05,policy,Within how many days must I apply for a make-up examination and to whom?,"You must apply for a make-up examination within ten days from the date of the missed examination. The application should be made to the Dean (Academics) through the course instructor. [Source: Academic Regulations (students enrolled from July 2020 onwards), p. 11]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,331.8,,1,0,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"A UG student can take a maximum of 10 days of short leave on medical grounds during the semester. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 17]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,181.4,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q07,policy,How many grade points is an A- grade worth?,"An A- grade is worth 9 grade points. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 7]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,202.0,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"A general category B.Tech student must earn a minimum of 75 credits by the end of the second semester to continue in the program. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 6]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,195.3,,0,0,1,0,1,,1,1,
+single_qwen3-8b,single,qwen3:8b,1,Q02,policy,How many Open Elective credits do I need to earn in order to get a B.Tech. degree?,"Students in the regular B.Tech programme are required to complete 12 credits of open elective courses. For a B.Tech with Minor route, the OE credits are replaced with 18 credits of selected compulsory courses from the minor department. [Source: B.Tech Computer Science and Engineering UG Curriculum (2026 onwards), p. 5]",search_documents,academic_helpdesk,301.4,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q13,schedule,What is the slot for the course Autonomous Systems?,"The slot for the course Autonomous Systems (CSL7570) is ""E"". [Source: Course & Timetable list (data/csv/courses.csv)]",lookup_course,academic_helpdesk,31.7,,0,1,1,0,1,,1,,1
+single_qwen3-8b,single,qwen3:8b,1,Q21,email,Write an email to the course instructor of CSL7570 that I need leave for 2 days.,"This is a draft and has NOT been sent.  
+
+To: csl7570.instructor@iitj.ac.in  
+Subject: Request for leave of absence - CSL7570  
+Body:  
+Dear Sir/Madam,  
+
+I am writing to inform you that I will be unable to attend the classes of CSL7570 - Autonomous Systems and to request leave for the following: 2 days, 30-31 Oct 2026, fever.  
+
+I will submit the supporting document (e.g. medical certificate) as required, and I will make sure to cover the missed lectures and any assignments.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",draft_email,academic_helpdesk,105.8,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,11.0,,1,,0,1,1,1,1,,
