@@ -17,7 +17,8 @@ import config
 from prompts import SINGLE_AGENT_INSTRUCTION
 from tools import ALL_TOOLS
 
-litellm.drop_params = True   # ignore settings a model does not support
+litellm.drop_params = True          # ignore settings a model does not support
+litellm.suppress_debug_info = True  # hide "Provider List" messages
 
 root_agent = Agent(
     name="academic_helpdesk",

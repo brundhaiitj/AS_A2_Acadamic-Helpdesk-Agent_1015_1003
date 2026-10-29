@@ -34,7 +34,10 @@ async def ask_async(agent, question: str, app_name: str = "academic_helpdesk") -
             text = "".join(p.text or "" for p in event.content.parts)
             if text.strip():
                 answer = text
-    answer = THINK_RE.sub("", answer).strip()
+    answer = THINK_RE.sub("", answer)
+    if "</think>" in answer:                 # some models print thinking without the opening tag
+        answer = answer.split("</think>")[-1]
+    answer = answer.strip()
     return {
         "question": question,
         "answer": answer,

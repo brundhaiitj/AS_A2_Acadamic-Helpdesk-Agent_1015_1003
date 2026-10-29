@@ -1,291 +1,74 @@
-# Single agent smoke test (model: qwen3:8b)
+# Single agent smoke test (model: qwen3:4b)
 
 ## Q1. What is the attendance requirement to sit in the Major exam?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** search_documents  |  **Time:** 132.3 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
-
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+Students are allowed to appear for the Major exam even if their attendance is below 75%. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]
 
 ## Q2. How many Open Elective credits do I need to earn in order to get a B.Tech. degree?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** search_documents  |  **Time:** 88.9 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
-
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+Students in the regular B.Tech programme at IIT Jodhpur are required to complete **12 credits** of open elective courses. This requirement is specified in the current B.Tech Computer Science and Engineering curriculum (2026 onwards). [Source: B.Tech Computer Science and Engineering UG Curriculum (2026 onwards), p. 9]
 
 ## Q3. Within how many days must I apply for a make-up examination?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** search_documents  |  **Time:** 87.5 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
-
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+You must apply for a make-up examination within ten days from the date of the missed examination. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 13]
 
 ## Q4. What is the slot for the course Autonomous Systems?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** lookup_course  |  **Time:** 55.9 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
-
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+The slot for the course "Autonomous Systems" (CSL7570) is **J**. [Source: Course & Timetable list (data/csv/courses.csv)]
 
 ## Q5. When are the Minor examinations in Semester I of 2026-27?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** search_documents  |  **Time:** 288.2 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
+The Minor examinations for Semester I of 2026-27 are scheduled around the midpoint of the semester (approximately October-November 2026), as per the Institute's Examination Policy. The exact dates are not specified in the academic calendar documents for this academic year. 
 
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+[Source: Circular: Amendment in the Examination Policy - one Minor and one Major exam (08 July 2024), p. 1]
 
 ## Q6. How many 400 level electives have been floated by the Humanities department in this semester?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** count_electives  |  **Time:** 92.9 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
-
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+The Humanities department (code: HS) has floated 6 electives at the 400 level for the current semester (AY 2026-27 Sem I). [Source: Course & Timetable list (data/csv/courses.csv)]
 
 ## Q7. Write an email to the course instructor of CSL7570 that I need leave for 2 days.
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** get_instructor_email, draft_email  |  **Time:** 219.3 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
+Here is the draft email for your leave request (not yet sent):
 
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+**To**: csl7570.instructor@iitj.ac.in  
+**Subject**: Request for leave of absence - CSL7570  
+**Body**:  
+Dear Sir/Madam,  
+
+I am writing to inform you that I will be unable to attend the classes of CSL7570 - Autonomous Systems and to request leave for the following: 2 days.  
+
+I will submit the supporting document (e.g. medical certificate) as required, and I will make sure to cover the missed lectures and any assignments.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Student Name  
+Roll No.: Roll Number  
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]
 
 ## Q8. What is the email ID of the instructor of EEL1010?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** get_instructor_email  |  **Time:** 76.0 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
-
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+The email IDs for EEL1010 are **rajlaxmichouhan@iitj.ac.in** and **soumava@iitj.ac.in**. [Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv)]
 
 ## Q9. What are the available dining options on the campus?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** none  |  **Time:** 21.1 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
+I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.
 
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+[Source: log_unanswered, p. 1]
 
 ## Q10. What is the best way to reach the campus from Jodhpur city center?
-**Tools used:** none  |  **Time:** 0 s
+**Tools used:** none  |  **Time:** 27.4 s
 
-ERROR: litellm.APIConnectionError: No module named 'mcp'
-Traceback (most recent call last):
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 681, in acompletion
-    init_response: Final = await loop.run_in_executor(None, func_with_context)
-                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/google/adk/utils/_runner_utils.py", line 85, in __await__
-    value, error = (yield waiting_on), None
-                    ^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
-    result = self.fn(*self.args, **self.kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/utils.py", line 1705, in wrapper
-    result = original_function(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/main.py", line 5297, in completion
-    from litellm.responses.mcp.chat_completions_handler import acompletion_with_mcp
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/chat_completions_handler.py", line 10, in <module>
-    from litellm.responses.mcp.litellm_proxy_mcp_handler import (
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/responses/mcp/litellm_proxy_mcp_handler.py", line 13, in <module>
-    from litellm.proxy._experimental.mcp_server.catalog import catalog_operation, global_manager
-  File "/opt/anaconda3/lib/python3.11/site-packages/litellm/proxy/_experimental/mcp_server/catalog.py", line 20, in <module>
-    from mcp.types import CacheableResult
-ModuleNotFoundError: No module named 'mcp'
+I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.
 
-This looks like a bug in LiteLLM rather than in your request. File it with one click (prefilled, no request data or error text, review before submitting): https://github.com/BerriAI/litellm/issues/new?template=bug_report.yml&labels=bug&title=%5BBug%5D%3A+ModuleNotFoundError+in+litellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py&version=1.106.6&domain=Python+SDK%3A+the+litellm+package+itself&description=Auto-generated+by+LiteLLM%27s+bug+report+link.+It+carries+no+request+data+or+error+text.+Please+describe+what+you+were+doing%2C+and+paste+the+error+message+from+your+log+below+if+it+contains+nothing+sensitive.%0A%0A%60%60%60%0A%0A%60%60%60%0A%0AException%3A+%60ModuleNotFoundError%60%0A%0ALiteLLM+frames%3A%0A%60%60%60%0Alitellm%2Fmain.py%3A681+in+acompletion%0Alitellm%2Futils.py%3A1705+in+wrapper%0Alitellm%2Fmain.py%3A5297+in+completion%0Alitellm%2Fresponses%2Fmcp%2Fchat_completions_handler.py%3A10+in+%3Cmodule%3E%0Alitellm%2Fresponses%2Fmcp%2Flitellm_proxy_mcp_handler.py%3A13+in+%3Cmodule%3E%0Alitellm%2Fproxy%2F_experimental%2Fmcp_server%2Fcatalog.py%3A20+in+%3Cmodule%3E%0A%60%60%60%0A%0ASurface%3A+sdk%0AEndpoint+%2F+call%3A+unknown%0AProvider%3A+ollama_chat%0ALiteLLM%3A+1.106.6%0APython%3A+3.11.15%0A&deployment=pip+%2F+Python+SDK
+[Source: log_unanswered, p. 1]

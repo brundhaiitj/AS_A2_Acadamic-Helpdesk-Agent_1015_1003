@@ -28,7 +28,7 @@ RESULTS_DIR = ROOT / "results"
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 os.environ.setdefault("OLLAMA_API_BASE", OLLAMA_BASE_URL)  # used by LiteLLM
 
-CHAT_MODEL = os.getenv("HELPDESK_MODEL", "qwen3:8b")
+CHAT_MODEL = os.getenv("HELPDESK_MODEL", "qwen3:8b")   # use qwen3:4b on 8 GB RAM laptops
 EMBED_MODEL = os.getenv("EMBED_MODEL", "nomic-embed-text")
 
 # ---------- RAG settings ----------
@@ -47,7 +47,11 @@ def litellm_model_name() -> str:
 
 def litellm_model_kwargs() -> dict:
     """Extra settings for deterministic, laptop-friendly runs."""
-    kwargs = {"temperature": 0, "num_ctx": 8192}
+    kwargs = {
+        "temperature": 0,
+        "num_ctx": int(os.getenv("HELPDESK_NUM_CTX", "8192")),   # context window (tokens)
+        "timeout": int(os.getenv("HELPDESK_TIMEOUT", "300")),    # give up on one model call after 5 min
+    }
     if "qwen3" in CHAT_MODEL:
         kwargs["reasoning_effort"] = "none"   # turns off Qwen3 'thinking' mode
     return kwargs
