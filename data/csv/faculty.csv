@@ -1,0 +1,42 @@
+name,department,role,email,courses,data_status
+Instructor CSL7570 (dummy),CS,Course instructor,csl7570.instructor@iitj.ac.in,CSL7570,dummy - verify on ERP
+Instructor CHL7310 (dummy),CH,Course instructor,chl7310.instructor@iitj.ac.in,CHL7310,dummy - verify on ERP
+Instructor CHL3010 (dummy),CH,Course instructor,chl3010.instructor@iitj.ac.in,CHL3010,dummy - verify on ERP
+Instructor CHL3020 (dummy),CH,Course instructor,chl3020.instructor@iitj.ac.in,CHL3020,dummy - verify on ERP
+Instructor CHL4010 (dummy),CH,Course instructor,chl4010.instructor@iitj.ac.in,CHL4010,dummy - verify on ERP
+Instructor CHL4020 (dummy),CH,Course instructor,chl4020.instructor@iitj.ac.in,CHL4020,dummy - verify on ERP
+Instructor CSL3010 (dummy),CS,Course instructor,csl3010.instructor@iitj.ac.in,CSL3010,dummy - verify on ERP
+Instructor CSL4010 (dummy),CS,Course instructor,csl4010.instructor@iitj.ac.in,CSL4010,dummy - verify on ERP
+Instructor CSL4020 (dummy),CS,Course instructor,csl4020.instructor@iitj.ac.in,CSL4020,dummy - verify on ERP
+Instructor HSL3010 (dummy),HS,Course instructor,hsl3010.instructor@iitj.ac.in,HSL3010,dummy - verify on ERP
+Instructor HSL3020 (dummy),HS,Course instructor,hsl3020.instructor@iitj.ac.in,HSL3020,dummy - verify on ERP
+Instructor HSL3030 (dummy),HS,Course instructor,hsl3030.instructor@iitj.ac.in,HSL3030,dummy - verify on ERP
+Instructor HSL4010 (dummy),HS,Course instructor,hsl4010.instructor@iitj.ac.in,HSL4010,dummy - verify on ERP
+Instructor HSL4020 (dummy),HS,Course instructor,hsl4020.instructor@iitj.ac.in,HSL4020,dummy - verify on ERP
+Instructor HSL4030 (dummy),HS,Course instructor,hsl4030.instructor@iitj.ac.in,HSL4030,dummy - verify on ERP
+Instructor HSL4040 (dummy),HS,Course instructor,hsl4040.instructor@iitj.ac.in,HSL4040,dummy - verify on ERP
+Instructor HSL4050 (dummy),HS,Course instructor,hsl4050.instructor@iitj.ac.in,HSL4050,dummy - verify on ERP
+Instructor HSL4060 (dummy),HS,Course instructor,hsl4060.instructor@iitj.ac.in,HSL4060,dummy - verify on ERP
+Raviraj Vankayala,BB,Course instructor,rvankayala@iitj.ac.in,BBL1020,official - Office of Academics first-year time table
+Dinesh Ahirwar,BB,Course instructor,dineshahirwar@iitj.ac.in,BBP1010,official - Office of Academics first-year time table
+Rajlaxmi Chouhan,EE,Course instructor,rajlaxmichouhan@iitj.ac.in,EEL1010,official - Office of Academics first-year time table
+Soumava Mukherjee,EE,Course instructor,soumava@iitj.ac.in,EEL1010,official - Office of Academics first-year time table
+Richa Singh,CS,Course instructor,richa@iitj.ac.in,CSL1010,official - Office of Academics first-year time table
+Kirankumar Hiremath,MA,Course instructor,k.r.hiremath@iitj.ac.in,MAL1010,official - Office of Academics first-year time table
+Prodyut Ranjan Chakraborty,ME,Course instructor,pchakraborty@iitj.ac.in,MEP1010,official - Office of Academics first-year time table
+Anupama Mohan,HS,Course instructor,amohan@iitj.ac.in,HSN1010,official - Office of Academics first-year time table
+Ananya Debnath,OS,Course instructor,ananya@iitj.ac.in,OSN1010,official - Office of Academics first-year time table
+Ankita Sharma,OS,Course instructor,ankitasharma@iitj.ac.in,OSN1020 OSN1030,official - Office of Academics first-year time table
+Sandip Murarka,OA,Course instructor,sandipmurarka@iitj.ac.in,OAE1010,official - Office of Academics first-year time table
+Rakesh Kumar Sharma,CY,Course instructor,cyl1010.instructor@iitj.ac.in,CYL1010,official - email replaced with dummy (site lists a wrong email)
+Amrita Puri,ME,Course instructor,amritapuri@iitj.ac.in,MEL1010,official - Office of Academics first-year time table
+Durgamadhab Mishra,PH,Course instructor,durgamadhab@iitj.ac.in,PHL1010,official - Office of Academics first-year time table
+B M Krishna Mariserla,PH,Course instructor,bmkrishna@iitj.ac.in,PHP1010,official - Office of Academics first-year time table
+Nirmal Kumar Rana,CY,Course instructor,nirmalrana@iitj.ac.in,CYP1010,official - Office of Academics first-year time table
+Department of Computer Science & Engineering,CS,Department office,office_cse@iitj.ac.in,,official - department web page
+Department of Chemical Engineering,CH,Department office,office_che@iitj.ac.in,,official - department web page
+Department of Chemistry,CY,Department office,office_chemistry@iitj.ac.in,,official - department web page
+Department of Electrical Engineering,EE,Department office,office_ee@iitj.ac.in,,official - department web page
+Department of Civil and Infrastructure Engineering,CI,Department office,office_civil@iitj.ac.in,,official - department web page
+School of Design,DS,Department office,office_design@iitj.ac.in,,official - department web page
+Office of Executive Education Program,EX,Department office,office_eep@iitj.ac.in,,official - department web page

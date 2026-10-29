@@ -1,0 +1,35 @@
+course_code,course_name,department,category,credits,ltp,slot,instructor,instructor_email,classroom,semester,data_status
+CSL7570,Autonomous Systems,CS,elective,3,3-0-0,J,Instructor CSL7570 (dummy),csl7570.instructor@iitj.ac.in,LHC 105,AY 2026-27 Sem I,dummy - verify on ERP
+CHL7310,Chemometrics,CH,elective,3,3-0-0,H,Instructor CHL7310 (dummy),chl7310.instructor@iitj.ac.in,LHC 208,AY 2026-27 Sem I,dummy - verify on ERP
+CHL3010,Mass Transfer - II,CH,programme compulsory,4,3-1-0,B,Instructor CHL3010 (dummy),chl3010.instructor@iitj.ac.in,LHC 104,AY 2026-27 Sem I,dummy - verify on ERP
+CHL3020,Chemical Reaction Engineering - II,CH,programme compulsory,3,3-0-0,C,Instructor CHL3020 (dummy),chl3020.instructor@iitj.ac.in,LHC 104,AY 2026-27 Sem I,dummy - verify on ERP
+CHL4010,Process Dynamics and Control,CH,programme elective,3,3-0-0,D,Instructor CHL4010 (dummy),chl4010.instructor@iitj.ac.in,LHC 106,AY 2026-27 Sem I,dummy - verify on ERP
+CHL4020,Polymer Science and Engineering,CH,programme elective,3,3-0-0,E,Instructor CHL4020 (dummy),chl4020.instructor@iitj.ac.in,LHC 107,AY 2026-27 Sem I,dummy - verify on ERP
+CSL3010,Design and Analysis of Algorithms,CS,programme compulsory,3,3-0-0,A,Instructor CSL3010 (dummy),csl3010.instructor@iitj.ac.in,LHC 101,AY 2026-27 Sem I,dummy - verify on ERP
+CSL4010,Deep Learning,CS,programme elective,3,3-0-0,F,Instructor CSL4010 (dummy),csl4010.instructor@iitj.ac.in,LHC 102,AY 2026-27 Sem I,dummy - verify on ERP
+CSL4020,Computer Vision,CS,programme elective,3,3-0-0,G,Instructor CSL4020 (dummy),csl4020.instructor@iitj.ac.in,LHC 103,AY 2026-27 Sem I,dummy - verify on ERP
+HSL3010,Introduction to Sociology,HS,HSS elective,3,3-0-0,U,Instructor HSL3010 (dummy),hsl3010.instructor@iitj.ac.in,LHC 201,AY 2026-27 Sem I,dummy - verify on ERP
+HSL3020,Digital Society,HS,HSS elective,3,3-0-0,U,Instructor HSL3020 (dummy),hsl3020.instructor@iitj.ac.in,LHC 202,AY 2026-27 Sem I,dummy - verify on ERP
+HSL3030,Urban Sociology,HS,HSS elective,3,3-0-0,U,Instructor HSL3030 (dummy),hsl3030.instructor@iitj.ac.in,LHC 203,AY 2026-27 Sem I,dummy - verify on ERP
+HSL4010,Introduction to Philosophy,HS,HSS elective,3,3-0-0,W,Instructor HSL4010 (dummy),hsl4010.instructor@iitj.ac.in,LHC 204,AY 2026-27 Sem I,dummy - verify on ERP
+HSL4020,Fundamentals of Logic,HS,HSS elective,3,3-0-0,W,Instructor HSL4020 (dummy),hsl4020.instructor@iitj.ac.in,LHC 205,AY 2026-27 Sem I,dummy - verify on ERP
+HSL4030,Critical Thinking,HS,HSS elective,3,3-0-0,W,Instructor HSL4030 (dummy),hsl4030.instructor@iitj.ac.in,LHC 206,AY 2026-27 Sem I,dummy - verify on ERP
+HSL4040,Theories of Justice,HS,HSS elective,3,3-0-0,W,Instructor HSL4040 (dummy),hsl4040.instructor@iitj.ac.in,LHC 207,AY 2026-27 Sem I,dummy - verify on ERP
+HSL4050,Gandhian Thought,HS,HSS elective,3,3-0-0,W,Instructor HSL4050 (dummy),hsl4050.instructor@iitj.ac.in,LHC 208,AY 2026-27 Sem I,dummy - verify on ERP
+HSL4060,Role of Technology in Development,HS,HSS elective,3,3-0-0,W,Instructor HSL4060 (dummy),hsl4060.instructor@iitj.ac.in,LHC 209,AY 2026-27 Sem I,dummy - verify on ERP
+BBL1020,Introduction to Bioengineering Theory,BB,institute core,3,3-0-0,F,Raviraj Vankayala,rvankayala@iitj.ac.in,LHB 308,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+BBP1010,Introduction to Bioengineering Lab,BB,institute core,1,0-0-2,M1,Dinesh Ahirwar,dineshahirwar@iitj.ac.in,Bioengineering Dept,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+EEL1010,Introduction to Electrical Engineering,EE,institute core,4,3-0-2,K,"Rajlaxmi Chouhan, Soumava Mukherjee","rajlaxmichouhan@iitj.ac.in, soumava@iitj.ac.in",LHB 308,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+CSL1010,Introduction to Computer Science,CS,institute core,4,3-0-2,G,Richa Singh,richa@iitj.ac.in,LHB 308,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+MAL1010,Mathematics I,MA,institute core,4,3-1-0,N,Kirankumar Hiremath,k.r.hiremath@iitj.ac.in,LHB 308 / LHB 110,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+MEP1010,Engineering Visualization,ME,institute core,1,0-0-2,M3,Prodyut Ranjan Chakraborty,pchakraborty@iitj.ac.in,Computer Centre,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+HSN1010,Communication Skill - I,HS,non-graded core,1,0-0-2,M4,Anupama Mohan,amohan@iitj.ac.in,Computer Centre,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+OSN1010,Social Connect and Responsibilities - I,OS,non-graded core,0.5,0-0-1,NG-1,Ananya Debnath,ananya@iitj.ac.in,LHB 110,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+OSN1020,Performing Arts I,OS,non-graded core,0.5,0-0-1,NG-2,Ankita Sharma,ankitasharma@iitj.ac.in,Sport Ground / Berm,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+OSN1030,Sport I,OS,non-graded core,0.5,0-0-1,NG-2,Ankita Sharma,ankitasharma@iitj.ac.in,Sport Ground / Berm,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+OAE1010,Engineering Design - I,OA,institute core,1,0-0-2,M8,Sandip Murarka,sandipmurarka@iitj.ac.in,PH/MT Department,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+CYL1010,Chemistry,CY,institute core,3,3-0-0,G,Rakesh Kumar Sharma,cyl1010.instructor@iitj.ac.in,LHB 110,AY 2023-24 Sem I (first year),official - email replaced with dummy (site lists a wrong email)
+MEL1010,Engineering Mechanics,ME,institute core,3,2-1-0,F,Amrita Puri,amritapuri@iitj.ac.in,LHB 110,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+PHL1010,Electromagnetism and Optics,PH,institute core,3,3-0-0,K,Durgamadhab Mishra,durgamadhab@iitj.ac.in,LHB 110,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+PHP1010,Physics Lab,PH,institute core,1,0-0-2,M1,B M Krishna Mariserla,bmkrishna@iitj.ac.in,Physics Department,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
+CYP1010,Chemistry Lab,CY,institute core,1,0-0-2,M2,Nirmal Kumar Rana,nirmalrana@iitj.ac.in,Chemistry Department,AY 2023-24 Sem I (first year),official - Office of Academics first-year time table
