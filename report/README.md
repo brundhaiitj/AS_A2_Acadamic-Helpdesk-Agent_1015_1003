@@ -412,7 +412,7 @@ The set includes all seven examples from the assignment. Each question
 has an expected answer, an expected source document and an expected
 tool. eval/answer_keys.csv lists, for each question, the key facts the
 answer must contain and the specialist agent that should handle it. The
-full list is in Appendix A.
+full list of questions is in eval/questions.csv in the repository.
 
 **Metrics** (eval/score.py):
 
