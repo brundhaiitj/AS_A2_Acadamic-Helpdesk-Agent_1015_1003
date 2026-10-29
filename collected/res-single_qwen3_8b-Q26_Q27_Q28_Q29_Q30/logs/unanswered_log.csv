@@ -1,0 +1,6 @@
+timestamp,question,reason,model,status
+2026-10-29T20:25:54,What is the best way to reach the campus from Jodhpur city center?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:05,What will the weather be like in Jodhpur tomorrow?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:16,How do I apply for a hostel room change?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:26,Who won the last IPL final?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:37,Can you write a Python program to sort a list?,refused by agent (auto-logged),qwen3:8b,pending human answer

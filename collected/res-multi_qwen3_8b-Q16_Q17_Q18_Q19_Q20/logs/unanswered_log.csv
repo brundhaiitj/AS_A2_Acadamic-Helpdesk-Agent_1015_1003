@@ -1,0 +1,2 @@
+timestamp,question,reason,model,status
+2026-10-29T20:49:15,Who teaches Mathematics I (MAL1010) and what is its slot?,refused by agent (auto-logged),qwen3:8b,pending human answer

@@ -1,0 +1,2 @@
+timestamp,question,reason,model,status
+2026-10-29T20:50:22,Is branch change allowed for B.Tech students admitted in 2026?,refused by agent (auto-logged),qwen3:8b,pending human answer

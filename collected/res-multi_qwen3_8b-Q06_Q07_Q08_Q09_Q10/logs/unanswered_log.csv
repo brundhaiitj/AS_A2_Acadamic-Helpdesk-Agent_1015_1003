@@ -1,0 +1,3 @@
+timestamp,question,reason,model,status
+2026-10-29T20:26:34,How many days of short leave can a UG student take on medical grounds?,not found in documents,qwen3:8b,pending human answer
+2026-10-29T20:34:24,Is branch change allowed for B.Tech students admitted in 2026?,refused by agent (auto-logged),qwen3:8b,pending human answer

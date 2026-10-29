@@ -1,0 +1,2 @@
+timestamp,question,reason,model,status
+2026-10-29T20:42:29,What are the available dining options on the campus?,refused by agent (auto-logged),qwen3:8b,pending human answer

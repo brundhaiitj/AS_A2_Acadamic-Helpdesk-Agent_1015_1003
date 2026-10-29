@@ -1,0 +1,3 @@
+timestamp,question,reason,model,status
+2026-10-29T20:39:28,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:41:59,What are the available dining options on the campus?,refused by agent (auto-logged),qwen3:8b,pending human answer

@@ -1,0 +1,8 @@
+config,agent,model,run,id,category,question,answer,tools_used,agents_used,seconds,error,timestamp
+single_llama3.1-8b,single,llama3.1:8b,1,Q16,schedule,When do classes begin for Semester II of 2026-27?,Classes for Semester II of 2026-27 begin on 15 January 2027.,search_documents,academic_helpdesk,622.8,,2026-10-29 20:24:43
+single_llama3.1-8b,single,llama3.1:8b,1,Q17,schedule,What is the last date to request course withdrawal in Semester I 2026-27?,"The last date to request course withdrawal in Semester I 2026-27 is 1 October 2026. [Source: Academic Calendar AY 2026-27, p. 6]",search_documents,academic_helpdesk,253.1,,2026-10-29 20:35:06
+single_llama3.1-8b,single,llama3.1:8b,1,Q18,schedule,How many 400 level electives have been floated by the Humanities department in this semester?,"There are 6 400 level electives floated by the Humanities department in this semester. 
+
+[Source: Course & Timetable list (data/csv/courses.csv)]",count_electives,academic_helpdesk,79.0,,2026-10-29 20:39:19
+single_llama3.1-8b,single,llama3.1:8b,1,Q19,schedule,Who teaches Mathematics I (MAL1010) and what is its slot?,"The instructor for Mathematics I (MAL1010) is Kirankumar Hiremath, and its slot is N. [Source: Course & Timetable list (data/csv/courses.csv)]",lookup_course,academic_helpdesk,216.4,,2026-10-29 20:40:38
+single_llama3.1-8b,single,llama3.1:8b,1,Q20,schedule,When is the semester break in Semester I 2026-27?,"The semester break in Semester I 2026-27 is from 2-8 November 2026. [Source: Academic Calendar AY 2026-27, p. 7]",search_documents,academic_helpdesk,472.0,,2026-10-29 20:44:14

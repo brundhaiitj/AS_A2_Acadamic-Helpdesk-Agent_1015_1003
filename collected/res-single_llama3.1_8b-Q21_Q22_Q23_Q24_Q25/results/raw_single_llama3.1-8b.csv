@@ -1,0 +1,41 @@
+config,agent,model,run,id,category,question,answer,tools_used,agents_used,seconds,error,timestamp
+single_llama3.1-8b,single,llama3.1:8b,1,Q21,email,Write an email to the course instructor of CSL7570 that I need leave for 2 days.,"To: csl7570.instructor@iitj.ac.in
+CC: office_cse@iitj.ac.in
+Subject: Request for leave of absence - CSL7570
+
+Dear Sir/Madam,
+
+I am writing to inform you that I will be unable to attend the classes of CSL7570 - Autonomous Systems and to request leave for the following: 2 days.
+
+I will submit the supporting document (e.g. medical certificate) as required, and I will make sure to cover the missed lectures and any assignments.
+
+Thank you for your consideration.
+
+Yours sincerely,
+John Doe
+Roll No.: 20201001
+IIT Jodhpur
+
+This is a draft and has NOT been sent.",draft_email,academic_helpdesk,423.5,,2026-10-29 20:24:37
+single_llama3.1-8b,single,llama3.1:8b,1,Q22,email,Draft an email to the instructor of MAL1010 asking for permission to take the make-up exam for the Minor because I was hospitalised.,"To: k.r.hiremath@iitj.ac.in
+Subject: Request for permission to take make-up examination - MAL1010
+
+Dear Prof. Kirankumar Hiremath,
+
+I could not appear for the examination of MAL1010 - Mathematics I due to the following reason: hospitalised.
+
+I kindly request your permission and recommendation to take the make-up examination. I will attach the required medical certificate / supporting documents.
+
+Thank you for your consideration.
+
+Yours sincerely,
+John Doe
+Roll No.: 2020CS1010
+IIT Jodhpur
+
+This is a draft and has NOT been sent.",draft_email,academic_helpdesk,295.3,,2026-10-29 20:31:41
+single_llama3.1-8b,single,llama3.1:8b,1,Q23,email,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",draft_email,academic_helpdesk,213.8,,2026-10-29 20:36:36
+single_llama3.1-8b,single,llama3.1:8b,1,Q24,email,What is the email ID of the instructor of EEL1010?,"The email ID of the instructor of EEL1010 is rjlaxmichouhan@iitj.ac.in, soumava@iitj.ac.in. 
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv)]",get_instructor_email,academic_helpdesk,224.4,,2026-10-29 20:40:10
+single_llama3.1-8b,single,llama3.1:8b,1,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,academic_helpdesk,201.3,,2026-10-29 20:43:54

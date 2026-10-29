@@ -1,0 +1,5 @@
+timestamp,question,reason,model,status
+2026-10-29T19:31:20,TEST: what are the dining options on campus?,out of scope (tool test),qwen3:8b,pending human answer
+2026-10-29T18:39:22,What are the dining options on campus?,out of scope,qwen3:8b,pending human answer
+2026-10-29T18:42:35,"python eval/run_eval.py --agent single --runs 1 --ids Q02,Q13,Q21,Q25",refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T18:50:25,What are the available dining options on the campus?,refused by agent (auto-logged),qwen3:8b,pending human answer
