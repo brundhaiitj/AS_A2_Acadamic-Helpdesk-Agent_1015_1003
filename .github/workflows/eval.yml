@@ -1,7 +1,6 @@
 name: full-eval
 on:
-  push:
-    branches: [eval-run]
+  workflow_dispatch:
 jobs:
   ingest:
     runs-on: ubuntu-latest

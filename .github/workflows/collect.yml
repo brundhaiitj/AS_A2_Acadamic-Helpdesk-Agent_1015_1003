@@ -1,0 +1,26 @@
+name: collect
+on:
+  push:
+    branches: [eval-run]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: res-*
+          path: collected
+          run-id: 40945445537
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          find collected -type f | head -100
+          git config user.name "ANSHIKA ROLYA"
+          git config user.email "142898143+B23CH1003@users.noreply.github.com"
+          git checkout -b eval-results
+          git add -f collected
+          git commit -m "collected eval results"
+          git push -f origin eval-results
