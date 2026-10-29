@@ -46,7 +46,7 @@ python eval/run_eval.py --agent single --runs 1 --model qwen3:8b
 python eval/score.py       # results/scored_all.csv (accuracy, groundedness, refusals, tool/routing)
 python eval/analyze.py     # results/summary.md, consistency.csv, chart_*.png
 ```
-Report: `report/Academic_Helpdesk_Agent_Report.pdf` (editable: `.docx`).
+Report: [read online](report/README.md) · [PDF](report/Academic_Helpdesk_Agent_Report.pdf) · [Word (.docx) download](https://github.com/brundhaiitj/AS_A2_Acadamic-Helpdesk-Agent_1015_1003/raw/main/report/Academic_Helpdesk_Agent_Report.docx)
 Switch the LLM: set `HELPDESK_MODEL=llama3.1:8b` (or edit `src/config.py`).
 
 ## Tests
