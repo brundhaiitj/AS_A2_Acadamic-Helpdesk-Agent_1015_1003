@@ -7,3 +7,34 @@ timestamp,question,reason,model,status
 2026-10-29T20:37:04,What is the best way to reach the campus from Jodhpur city center?,out of scope,qwen3:8b,pending human answer
 2026-10-29T21:02:37,How many grade points is an A- grade worth?,refused by agent (auto-logged),qwen3:8b,pending human answer
 2026-10-29T21:11:56,What is the best way to reach the campus from Jodhpur city center?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:40:10,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,refused by agent (auto-logged),llama3.1:8b,pending human answer
+2026-10-29T20:46:47,What are the available dining options on the campus?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:25:55,What is the best way to reach the campus from Jodhpur city center?,out of scope,qwen3:8b,pending human answer
+2026-10-29T20:26:43,What will the weather be like in Jodhpur tomorrow?,out of scope,qwen3:8b,pending human answer
+2026-10-29T20:27:29,How do I apply for a hostel room change?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:27:48,Who won the last IPL final?,out of scope,qwen3:8b,pending human answer
+2026-10-29T20:28:34,Can you write a Python program to sort a list?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:33:30,What is the best way to reach the campus from Jodhpur city center?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:34:52,What will the weather be like in Jodhpur tomorrow?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:38:46,How do I apply for a hostel room change?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:40:02,Who won the last IPL final?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:41:22,Can you write a Python program to sort a list?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:49:15,Who teaches Mathematics I (MAL1010) and what is its slot?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:43:37,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,refused by agent (auto-logged),llama3.1:8b,pending human answer
+2026-10-29T20:46:32,What are the available dining options on the campus?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:39:28,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:41:59,What are the available dining options on the campus?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:50:22,Is branch change allowed for B.Tech students admitted in 2026?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:34,How many days of short leave can a UG student take on medical grounds?,not found in documents,qwen3:8b,pending human answer
+2026-10-29T20:34:24,Is branch change allowed for B.Tech students admitted in 2026?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:28:49,What is the best way to reach the campus from Jodhpur city center?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:32:12,What will the weather be like in Jodhpur tomorrow?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:35:33,How do I apply for a hostel room change?,out of scope,llama3.1:8b,pending human answer
+2026-10-29T20:39:09,Who won the last IPL final?,refused by agent (auto-logged),llama3.1:8b,pending human answer
+2026-10-29T20:39:29,Can you write a Python program to sort a list?,refused by agent (auto-logged),llama3.1:8b,pending human answer
+2026-10-29T20:25:54,What is the best way to reach the campus from Jodhpur city center?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:05,What will the weather be like in Jodhpur tomorrow?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:16,How do I apply for a hostel room change?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:26,Who won the last IPL final?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:26:37,Can you write a Python program to sort a list?,refused by agent (auto-logged),qwen3:8b,pending human answer
+2026-10-29T20:42:29,What are the available dining options on the campus?,refused by agent (auto-logged),qwen3:8b,pending human answer

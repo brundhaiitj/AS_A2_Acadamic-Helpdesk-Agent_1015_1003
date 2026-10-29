@@ -1,14 +1,239 @@
 config,agent,model,run,id,category,question,answer,tools_used,agents_used,seconds,error,accuracy_auto,grounded,cited,refused,refusal_correct,logged,tool_correct,routing_correct,manual_accuracy
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q01,policy,What is the attendance requirement to sit in the Major exam?,"According to the revised policy, a student is expected to have full attendance in each course unless the student takes a leave of absence for valid medical or bonafide reasons. In any case, the attendance of a student should not fall below 75% in a course. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,408.8,,0,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q02,policy,How many Open Elective credits do I need to earn in order to get a B.Tech. degree?,"You need to earn 12 Open Elective credits to get a B.Tech. degree. [Source: B.Tech Computer Science and Engineering UG Curriculum (2026 onwards), p. 5]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,214.1,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q03,policy,What are the minimum and maximum credits a UG student can register for in a semester?,"The minimum number of credits a UG student can register for in a semester is 12. The maximum number of credits a UG student can register for in a semester is 25. 
+
+[Source: regulations_ug_2020_bioscience_copy.pdf, p. 19]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,229.4,,1,0,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q04,policy,What is the maximum duration allowed to complete the B.Tech. program?,"The maximum duration allowed to complete the B.Tech. program is 14 registered semesters. [Source: regulations_ug_2020_bioscience_copy.pdf, p. 17]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,228.3,,1,0,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q05,policy,Within how many days must I apply for a make-up examination and to whom?,"You must apply for a make-up examination within 10 days from the date of the examination missed to the Dean (Academics) through the course instructor, explaining the reasons for your absence. [Source: regulations_pg_2022_onwards.pdf, p. 13]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,201.7,,1,0,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"A UG student can take a maximum of 10 days of short leave on medical grounds. [Source: regulations_web_2019_onwards.txt, p. 17]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,641.3,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q07,policy,How many grade points is an A- grade worth?,"An A- grade is worth 9 grade points. [Source: regulations_web_2019_onwards.txt, p. 7]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,383.9,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"A general category B.Tech student must earn a total of 153 credits by the end of the second semester to continue in the program. [Source: B.Tech Computer Science and Engineering UG Curriculum (2026 onwards), p. 4]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,395.9,,0,0,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q09,policy,What is the maximum number of credits I can register for in the summer term?,"The maximum number of credits a student can register for in the summer term is 16, as per the regulations for M.Tech. students. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 21]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,389.6,,0,0,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q10,policy,Is branch change allowed for B.Tech students admitted in 2026?,"Branch change is not allowed for B.Tech students admitted in 2026. According to the B.Tech Registration and Academic Session FAQ (branch change discontinued from AY 2026-27), ""Discontinuation of Branch Change from Academic Year 2026–27 in UG Programs."" [Source: B.Tech Registration and Academic Session FAQ (branch change discontinued from AY 2026-27), p. 2]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,378.2,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q11,policy,What happens if a student is absent for four or more weeks in a semester?,"If a student is absent for four or more weeks in a semester, their registration will result in automatic semester withdrawal for all the courses. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,661.7,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q12,policy,How many total credits are required for the B.Tech. in Chemical Engineering under the latest curriculum?,"The total credits required for the B.Tech. in Chemical Engineering under the latest curriculum is 153. [Source: B.Tech Chemical Engineering Programme Course Curriculum (2026), p. 4]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,405.7,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q13,schedule,What is the slot for the course Autonomous Systems?,The slot for the course Autonomous Systems is E. [Source: Course & Timetable list (data/csv/courses.csv)],transfer_to_agent;lookup_course,helpdesk_orchestrator;schedule_agent,350.9,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q14,schedule,When are the Minor examinations in Semester I of 2026-27?,"The Minor examinations in Semester I of 2026-27 will occur around the midpoint of the Semester, which is around the middle of September 2026. [Source: Circular: Amendment in the Examination Policy - one Minor and one Major exam (08 July 2024), p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,374.4,,0,0,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q15,schedule,When are the Major examinations for Semester I 2026-27?,"The Major examinations for Semester I 2026-27 are scheduled to take place from 12-14 June 2026. [Source: Academic Calendar Summer Term 2026, p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,446.5,,0,0,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q16,schedule,When do classes begin for Semester II of 2026-27?,"Classes for Semester II of 2026-27 begin on 1 January 2027, Friday. [Source: Academic Calendar AY 2026-27, p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,821.0,,0,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q17,schedule,What is the last date to request course withdrawal in Semester I 2026-27?,"The last date to request course withdrawal in Semester I 2026-27 is 1 October 2026. [Source: Academic Calendar AY 2026-27, p. 6]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,506.4,,1,1,1,0,1,,1,0,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q18,schedule,How many 400 level electives have been floated by the Humanities department in this semester?,There are 6 400 level electives floated by the Humanities department in this semester. [Source: Course & Timetable list (data/csv/courses.csv)],transfer_to_agent;count_electives,helpdesk_orchestrator;schedule_agent,169.5,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q19,schedule,Who teaches Mathematics I (MAL1010) and what is its slot?,"The instructor for Mathematics I (MAL1010) is Kirankumar Hiremath, and its slot is N. [Source: Course & Timetable list (data/csv/courses.csv)]",transfer_to_agent;lookup_course,helpdesk_orchestrator;schedule_agent,152.7,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q20,schedule,When is the semester break in Semester I 2026-27?,"The semester break in Semester I 2026-27 is from 2-8 November 2026. [Source: Academic Calendar AY 2026-27, p. 7]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,434.3,,1,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q21,email,Write an email to the course instructor of CSL7570 that I need leave for 2 days.,This is a draft and has NOT been sent.,transfer_to_agent;draft_email,helpdesk_orchestrator;email_agent,515.2,,0,0,0,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q22,email,Draft an email to the instructor of MAL1010 asking for permission to take the make-up exam for the Minor because I was hospitalised.,This is a draft and has NOT been sent.,transfer_to_agent;draft_email,helpdesk_orchestrator;email_agent,183.8,,0,0,0,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q23,email,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",transfer_to_agent;draft_email,helpdesk_orchestrator;email_agent,149.3,,0,0,0,1,0,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q24,email,What is the email ID of the instructor of EEL1010?,"The email ID of the instructor of EEL1010 is rjlaxmichouhan@iitj.ac.in, soumava@iitj.ac.in. [Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv)]",transfer_to_agent;get_instructor_email,helpdesk_orchestrator;email_agent,158.3,,0,1,1,0,1,,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,43.9,,1,,0,1,1,1,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q26,out_of_scope,What is the best way to reach the campus from Jodhpur city center?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,159.8,,1,,0,1,1,1,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q27,out_of_scope,What will the weather be like in Jodhpur tomorrow?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,81.8,,1,,0,1,1,1,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q28,out_of_scope,How do I apply for a hostel room change?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",transfer_to_agent;log_unanswered,helpdesk_orchestrator;policy_agent,260.7,,1,,0,1,1,1,1,0,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q29,out_of_scope,Who won the last IPL final?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,47.5,,1,,0,1,1,1,1,1,
+multi_llama3.1-8b,multi,llama3.1:8b,1,Q30,out_of_scope,Can you write a Python program to sort a list?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,80.9,,1,,0,1,1,1,1,1,
 multi_qwen3-8b,multi,qwen3:8b,1,Q01,policy,What is the attendance requirement to sit in the Major exam?,"The attendance requirement to sit in the Major exam is that a student's attendance should not fall below 75% in a course. If a student's attendance is below 75%, they will still be allowed to appear for the exams, but they must score at least a C grade to pass the course. If their marks are lower than the cut-off for a C grade, they will be awarded an F grade. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,210.6,,1,1,1,0,1,,1,1,0
 multi_qwen3-8b,multi,qwen3:8b,1,Q02,policy,How many Open Elective credits do I need to earn in order to get a B.Tech. degree?,"Students in the regular B.Tech programme are required to complete 12 credits of open elective courses. [Source: B.Tech Computer Science and Engineering UG Curriculum (2026 onwards), p. 9]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,180.3,,1,1,1,0,1,,1,1,
 multi_qwen3-8b,multi,qwen3:8b,1,Q03,policy,What are the minimum and maximum credits a UG student can register for in a semester?,"The minimum number of credits a UG student can register for in a semester is 12, and the maximum is 25. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 15]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,201.0,,1,1,1,0,1,,1,1,
 multi_qwen3-8b,multi,qwen3:8b,1,Q04,policy,What is the maximum duration allowed to complete the B.Tech. program?,"The maximum duration allowed to complete the B.Tech. program is 14 registered semesters. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 14]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,364.5,,1,1,1,0,1,,1,1,
 multi_qwen3-8b,multi,qwen3:8b,1,Q05,policy,Within how many days must I apply for a make-up examination and to whom?,"You must apply for a make-up examination within ten days from the date of the missed examination. The application should be made to the Dean (Academics) through the course instructor. [Source: Academic Regulations (students enrolled from July 2020 onwards), p. 11]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,331.8,,1,0,1,0,1,,1,1,
-multi_qwen3-8b,multi,qwen3:8b,1,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"A UG student can take a maximum of 10 days of short leave on medical grounds during the semester. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 17]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,181.4,,1,1,1,0,1,,1,1,
-multi_qwen3-8b,multi,qwen3:8b,1,Q07,policy,How many grade points is an A- grade worth?,"An A- grade is worth 9 grade points. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 7]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,202.0,,1,1,1,0,1,,1,1,
-multi_qwen3-8b,multi,qwen3:8b,1,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"A general category B.Tech student must earn a minimum of 75 credits by the end of the second semester to continue in the program. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 6]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,195.3,,0,0,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",transfer_to_agent;log_unanswered,helpdesk_orchestrator;policy_agent,160.8,,0,0,0,1,0,,0,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q07,policy,How many grade points is an A- grade worth?,"An A- grade is worth 9 grade points. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 7]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,146.2,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"The general category B.Tech student must earn a minimum of 75 credits by the end of the second semester to continue in the program. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 6]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,140.2,,0,0,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q09,policy,What is the maximum number of credits I can register for in the summer term?,"The maximum number of credits permitted for an undergraduate student in a semester is 25. However, for the summer term, the maximum number of credits a student can register for is 8. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 15]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,140.2,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q10,policy,Is branch change allowed for B.Tech students admitted in 2026?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",transfer_to_agent,helpdesk_orchestrator;policy_agent,30.9,,0,0,0,1,0,,0,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q11,policy,What happens if a student is absent for four or more weeks in a semester?,"Absence for a period of four or more weeks in any semester will result in automatic withdrawal from that semester. [Source: Academic Regulations (students enrolled from July 2020 onwards), p. 21]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,609.8,,1,0,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q12,policy,How many total credits are required for the B.Tech. in Chemical Engineering under the latest curriculum?,"The total number of credits required for the B.Tech. in Chemical Engineering under the latest curriculum is 153. [Source: B.Tech Chemical Engineering Programme Course Curriculum (2026), p. 4]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,426.9,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q13,schedule,What is the slot for the course Autonomous Systems?,"The slot for the course ""Autonomous Systems"" (CSL7570) is E. [Source: Course & Timetable list (data/csv/courses.csv)]",transfer_to_agent;lookup_course,helpdesk_orchestrator;schedule_agent,309.6,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q14,schedule,When are the Minor examinations in Semester I of 2026-27?,"The Minor examinations in Semester I of 2026-27 are scheduled from 21-22 May 2026. [Source: Academic Calendar Summer Term 2026, p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,487.9,,0,0,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q15,schedule,When are the Major examinations for Semester I 2026-27?,"The Major examinations for Semester I 2026-27 are scheduled from 12-14 June 2026. [Source: Academic Calendar Summer Term 2026, p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,486.0,,0,0,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q16,schedule,When do classes begin for Semester II of 2026-27?,"Classes for Semester II of 2026-27 begin on 1 January 2027. [Source: Academic Calendar AY 2026-27, p. 4]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,851.8,,1,1,1,0,1,,1,1,0
+multi_qwen3-8b,multi,qwen3:8b,1,Q17,schedule,What is the last date to request course withdrawal in Semester I 2026-27?,"The last date to request course withdrawal in Semester I 2026-27 is 1 October 2026 [Source: Academic Calendar AY 2026-27, p. 1].",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,355.6,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q18,schedule,How many 400 level electives have been floated by the Humanities department in this semester?,"There are 6 electives at the 400 level floated by the Humanities department in this semester. The courses are: Introduction to Philosophy, Fundamentals of Logic, Critical Thinking, Theories of Justice, Gandhian Thought, and Role of Technology in Development. [Source: Course & Timetable list (data/csv/courses.csv)]",transfer_to_agent;count_electives,helpdesk_orchestrator;schedule_agent,160.3,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q19,schedule,Who teaches Mathematics I (MAL1010) and what is its slot?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",transfer_to_agent;lookup_course,helpdesk_orchestrator;schedule_agent,110.7,,0,0,0,1,0,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q20,schedule,When is the semester break in Semester I 2026-27?,"The semester break in Semester I 2026-27 is from 2 to 8 November 2026. [Source: Academic Calendar AY 2026-27, p. 2]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,476.2,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q21,email,Write an email to the course instructor of CSL7570 that I need leave for 2 days.,"This is a draft and has NOT been sent.  
+To: csl7570.instructor@iitj.ac.in  
+Subject: Request for leave of absence - CSL7570  
+Body:  
+Dear Sir/Madam,  
+
+I am writing to inform you that I will be unable to attend the classes of CSL7570 - Autonomous Systems and to request leave for the following: 2 days.  
+
+I will submit the supporting document (e.g. medical certificate) as required, and I will make sure to cover the missed lectures and any assignments.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Student Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",transfer_to_agent;draft_email,helpdesk_orchestrator;email_agent,557.3,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q22,email,Draft an email to the instructor of MAL1010 asking for permission to take the make-up exam for the Minor because I was hospitalised.,"This is a draft and has NOT been sent.  
+To: k.r.hiremath@iitj.ac.in  
+Subject: Request for permission to take make-up examination - MAL1010  
+Body:  
+Dear Prof. Kirankumar Hiremath,  
+
+I could not appear for the examination of MAL1010 - Mathematics I due to the following reason: I was hospitalised and need permission to take the make-up exam for the Minor.  
+
+I kindly request your permission and recommendation to take the make-up examination. I will attach the required medical certificate / supporting documents.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Student Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
+This is a draft and has NOT been sent.",transfer_to_agent;draft_email,helpdesk_orchestrator;email_agent,235.2,,1,0,0,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q23,email,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",transfer_to_agent;draft_email;get_instructor_email,helpdesk_orchestrator;email_agent,158.2,,0,0,0,1,0,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q24,email,What is the email ID of the instructor of EEL1010?,The email IDs of the instructors for EEL1010 are rajlaxmichouhan@iitj.ac.in and soumava@iitj.ac.in [Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv)].,transfer_to_agent;get_instructor_email,helpdesk_orchestrator;email_agent,132.0,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,helpdesk_orchestrator,19.3,,1,,0,1,1,1,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q26,out_of_scope,What is the best way to reach the campus from Jodhpur city center?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,120.2,,1,,0,1,1,1,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q27,out_of_scope,What will the weather be like in Jodhpur tomorrow?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,47.7,,1,,0,1,1,1,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q28,out_of_scope,How do I apply for a hostel room change?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,helpdesk_orchestrator,21.1,,1,,0,1,1,1,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q29,out_of_scope,Who won the last IPL final?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,43.9,,1,,0,1,1,1,1,1,
+multi_qwen3-8b,multi,qwen3:8b,1,Q30,out_of_scope,Can you write a Python program to sort a list?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,helpdesk_orchestrator,21.3,,1,,0,1,1,1,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"A UG student can take a maximum of 10 days of short leave on medical grounds during the semester. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 17]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,181.4,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q07,policy,How many grade points is an A- grade worth?,"An A- grade is worth 9 grade points. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 7]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,202.0,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"A general category B.Tech student must earn a minimum of 75 credits by the end of the second semester to continue in the program. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 6]",transfer_to_agent;search_documents,helpdesk_orchestrator;policy_agent,195.3,,0,0,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q13,schedule,What is the slot for the course Autonomous Systems?,"The slot for the course ""Autonomous Systems"" (CSL7570) is E. [Source: Course & Timetable list (data/csv/courses.csv)]",transfer_to_agent;lookup_course,helpdesk_orchestrator;schedule_agent,253.3,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q14,schedule,When are the Minor examinations in Semester I of 2026-27?,"The Minor examinations in Semester I of 2026-27 are scheduled from 21-22 May 2026. [Source: Academic Calendar Summer Term 2026, p. 1]",transfer_to_agent;search_documents,helpdesk_orchestrator;schedule_agent,257.4,,0,0,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q18,schedule,How many 400 level electives have been floated by the Humanities department in this semester?,"There are 6 electives at the 400 level floated by the Humanities department in this semester. The courses are: Introduction to Philosophy, Fundamentals of Logic, Critical Thinking, Theories of Justice, Gandhian Thought, and Role of Technology in Development. [Source: Course & Timetable list (data/csv/courses.csv)]",transfer_to_agent;count_electives,helpdesk_orchestrator;schedule_agent,82.0,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q21,email,Write an email to the course instructor of CSL7570 that I need leave for 2 days.,"This is a draft and has NOT been sent.  
+To: csl7570.instructor@iitj.ac.in  
+Subject: Request for leave of absence - CSL7570  
+Body:  
+Dear Sir/Madam,  
+
+I am writing to inform you that I will be unable to attend the classes of CSL7570 - Autonomous Systems and to request leave for the following: 2 days.  
+
+I will submit the supporting document (e.g. medical certificate) as required, and I will make sure to cover the missed lectures and any assignments.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Student Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",transfer_to_agent;draft_email,helpdesk_orchestrator;email_agent,217.3,,1,1,1,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q22,email,Draft an email to the instructor of MAL1010 asking for permission to take the make-up exam for the Minor because I was hospitalised.,"This is a draft and has NOT been sent.  
+To: k.r.hiremath@iitj.ac.in  
+Subject: Request for permission to take make-up examination - MAL1010  
+Body:  
+Dear Prof. Kirankumar Hiremath,  
+
+I could not appear for the examination of MAL1010 - Mathematics I due to the following reason: I was hospitalised and unable to take the Minor examination.  
+
+I kindly request your permission and recommendation to take the make-up examination. I will attach the required medical certificate / supporting documents.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Student Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
+This is a draft and has NOT been sent.",transfer_to_agent;draft_email,helpdesk_orchestrator;email_agent,117.7,,1,0,0,0,1,,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,24.4,,1,,0,1,1,1,1,1,
+multi_qwen3-8b,multi,qwen3:8b,2,Q26,out_of_scope,What is the best way to reach the campus from Jodhpur city center?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,helpdesk_orchestrator,26.6,,1,,0,1,1,1,1,1,
+single_llama3.1-8b,single,llama3.1:8b,1,Q01,policy,What is the attendance requirement to sit in the Major exam?,"According to the revised policy, a student is expected to have full attendance in each course unless the student takes a leave of absence for valid medical or bonafide reasons. In any case, the attendance of a student should not fall below 75% in a course. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",search_documents,academic_helpdesk,334.4,,0,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q02,policy,How many Open Elective credits do I need to earn in order to get a B.Tech. degree?,"You need to earn 12 Open Elective credits to get a B.Tech. degree. [Source: B.Tech Computer Science and Engineering UG Curriculum (2026 onwards), p. 5]",search_documents,academic_helpdesk,164.1,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q03,policy,What are the minimum and maximum credits a UG student can register for in a semester?,"The minimum number of credits a UG student can register for in a semester is 12, and the maximum number of credits is 25. 
+
+[Source: regulations_ug_2020_bioscience_copy.pdf, p. 19]",search_documents,academic_helpdesk,169.4,,1,0,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q04,policy,What is the maximum duration allowed to complete the B.Tech. program?,"The maximum duration allowed to complete the B.Tech. program is 14 registered semesters. [Source: regulations_web_2019_onwards.txt, p. 14]",search_documents,academic_helpdesk,165.1,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q05,policy,Within how many days must I apply for a make-up examination and to whom?,"You must apply for a make-up examination within 10 days from the date of the examination missed to the Dean (Academics) through the course instructor. 
+
+[Source: regulations_pg_2022_onwards.pdf, p. 13]",search_documents,academic_helpdesk,142.3,,1,0,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"A UG student can take a maximum of 10 days of short leave on medical grounds. 
+
+[Source: regulations_web_2019_onwards.txt, p. 17]",search_documents,academic_helpdesk,512.4,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q07,policy,How many grade points is an A- grade worth?,"An A- grade is worth 9 grade points. [Source: regulations_web_2019_onwards.txt, p. 7]",search_documents,academic_helpdesk,285.4,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"A general category B.Tech student must earn a minimum of 80 credits by the end of the second semester to continue in the program. [Source: Academic Regulations (students enrolled from July 2020 onwards), p. 17]",search_documents,academic_helpdesk,303.6,,0,0,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q09,policy,What is the maximum number of credits I can register for in the summer term?,"The maximum number of credits a student can register for in the summer term is 16 for Executive (Accelerated) M.Tech. students, 9 for Executive (Normal) M.Tech. students, 6 for Executive (Slow-Paced) M.Tech. students, and 9 for Full-time (Regular) M.Tech. students. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 21]",search_documents,academic_helpdesk,312.4,,0,0,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q10,policy,Is branch change allowed for B.Tech students admitted in 2026?,"Branch change is not allowed for B.Tech students admitted in 2026. According to the B.Tech Registration and Academic Session FAQ (branch change discontinued from AY 2026-27), ""No Branch Change post second year onwards."" [Source: B.Tech Registration and Academic Session FAQ (branch change discontinued from AY 2026-27), p. 2]",search_documents,academic_helpdesk,271.5,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q11,policy,What happens if a student is absent for four or more weeks in a semester?,"If a student is absent for four or more weeks in a semester, their registration will result in automatic semester withdrawal for all the courses. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",search_documents,academic_helpdesk,454.5,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q12,policy,How many total credits are required for the B.Tech. in Chemical Engineering under the latest curriculum?,"The total credits required for the B.Tech. in Chemical Engineering under the latest curriculum is 153. [Source: B.Tech Chemical Engineering Programme Course Curriculum (2026), p. 4]",search_documents,academic_helpdesk,276.1,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q13,schedule,What is the slot for the course Autonomous Systems?,"The slot for the course Autonomous Systems is E. 
+
+[Source: Course & Timetable list (data/csv/courses.csv)]",lookup_course,academic_helpdesk,53.8,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q14,schedule,When are the Minor examinations in Semester I of 2026-27?,"The Minor examinations in Semester I of 2026-27 will occur around the midpoint of the Semester, which is around October 27, 2026. [Source: Circular: Amendment in the Examination Policy - one Minor and one Major exam (08 July 2024), p. 1]",search_documents,academic_helpdesk,398.4,,0,0,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q15,schedule,When are the Major examinations for Semester I 2026-27?,"The Major examinations for Semester I 2026-27 are scheduled to take place from 12-14 June 2026. [Source: Academic Calendar Summer Term 2026, p. 1]",search_documents,academic_helpdesk,287.6,,0,0,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q16,schedule,When do classes begin for Semester II of 2026-27?,Classes for Semester II of 2026-27 begin on 15 January 2027.,search_documents,academic_helpdesk,622.8,,0,0,0,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q17,schedule,What is the last date to request course withdrawal in Semester I 2026-27?,"The last date to request course withdrawal in Semester I 2026-27 is 1 October 2026. [Source: Academic Calendar AY 2026-27, p. 6]",search_documents,academic_helpdesk,253.1,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q18,schedule,How many 400 level electives have been floated by the Humanities department in this semester?,"There are 6 400 level electives floated by the Humanities department in this semester. 
+
+[Source: Course & Timetable list (data/csv/courses.csv)]",count_electives,academic_helpdesk,79.0,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q19,schedule,Who teaches Mathematics I (MAL1010) and what is its slot?,"The instructor for Mathematics I (MAL1010) is Kirankumar Hiremath, and its slot is N. [Source: Course & Timetable list (data/csv/courses.csv)]",lookup_course,academic_helpdesk,216.4,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q20,schedule,When is the semester break in Semester I 2026-27?,"The semester break in Semester I 2026-27 is from 2-8 November 2026. [Source: Academic Calendar AY 2026-27, p. 7]",search_documents,academic_helpdesk,472.0,,1,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q21,email,Write an email to the course instructor of CSL7570 that I need leave for 2 days.,"To: csl7570.instructor@iitj.ac.in
+CC: office_cse@iitj.ac.in
+Subject: Request for leave of absence - CSL7570
+
+Dear Sir/Madam,
+
+I am writing to inform you that I will be unable to attend the classes of CSL7570 - Autonomous Systems and to request leave for the following: 2 days.
+
+I will submit the supporting document (e.g. medical certificate) as required, and I will make sure to cover the missed lectures and any assignments.
+
+Thank you for your consideration.
+
+Yours sincerely,
+John Doe
+Roll No.: 20201001
+IIT Jodhpur
+
+This is a draft and has NOT been sent.",draft_email,academic_helpdesk,423.5,,1,0,0,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q22,email,Draft an email to the instructor of MAL1010 asking for permission to take the make-up exam for the Minor because I was hospitalised.,"To: k.r.hiremath@iitj.ac.in
+Subject: Request for permission to take make-up examination - MAL1010
+
+Dear Prof. Kirankumar Hiremath,
+
+I could not appear for the examination of MAL1010 - Mathematics I due to the following reason: hospitalised.
+
+I kindly request your permission and recommendation to take the make-up examination. I will attach the required medical certificate / supporting documents.
+
+Thank you for your consideration.
+
+Yours sincerely,
+John Doe
+Roll No.: 2020CS1010
+IIT Jodhpur
+
+This is a draft and has NOT been sent.",draft_email,academic_helpdesk,295.3,,1,0,0,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q23,email,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",draft_email,academic_helpdesk,213.8,,0,0,0,1,0,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q24,email,What is the email ID of the instructor of EEL1010?,"The email ID of the instructor of EEL1010 is rjlaxmichouhan@iitj.ac.in, soumava@iitj.ac.in. 
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv)]",get_instructor_email,academic_helpdesk,224.4,,0,1,1,0,1,,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,academic_helpdesk,201.3,,1,,0,1,1,1,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q26,out_of_scope,What is the best way to reach the campus from Jodhpur city center?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,academic_helpdesk,328.7,,1,,0,1,1,1,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q27,out_of_scope,What will the weather be like in Jodhpur tomorrow?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,academic_helpdesk,202.5,,1,,0,1,1,1,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q28,out_of_scope,How do I apply for a hostel room change?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",log_unanswered,academic_helpdesk,200.4,,1,,0,1,1,1,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q29,out_of_scope,Who won the last IPL final?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,187.5,,1,,0,1,1,1,1,,
+single_llama3.1-8b,single,llama3.1:8b,1,Q30,out_of_scope,Can you write a Python program to sort a list?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,19.5,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q01,policy,What is the attendance requirement to sit in the Major exam?,"The attendance requirement to sit in the Major exam is that a student's attendance should not fall below 75% in a course. If a student's attendance is below 75%, they will still be allowed to appear for the exams, but they will need to score at least a C grade to pass the course. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",search_documents,academic_helpdesk,317.0,,1,1,1,0,1,,1,,0
 single_qwen3-8b,single,qwen3:8b,1,Q02,policy,How many Open Elective credits do I need to earn in order to get a B.Tech. degree?,"Students in the regular B.Tech programme are required to complete 12 credits of open elective courses. For a B.Tech with Minor route, the OE credits are replaced with 18 credits of selected compulsory courses from the minor department. [Source: B.Tech Computer Science and Engineering UG Curriculum (2026 onwards), p. 5]",search_documents,academic_helpdesk,301.4,,1,1,1,0,1,,1,,
-single_qwen3-8b,single,qwen3:8b,1,Q13,schedule,What is the slot for the course Autonomous Systems?,"The slot for the course Autonomous Systems (CSL7570) is ""E"". [Source: Course & Timetable list (data/csv/courses.csv)]",lookup_course,academic_helpdesk,31.7,,0,1,1,0,1,,1,,1
+single_qwen3-8b,single,qwen3:8b,1,Q03,policy,What are the minimum and maximum credits a UG student can register for in a semester?,"The minimum number of credits a UG student can register for in a semester is 12, and the maximum is 25. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 15]",search_documents,academic_helpdesk,174.7,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q04,policy,What is the maximum duration allowed to complete the B.Tech. program?,"The maximum duration allowed to complete the B.Tech. program is 14 registered semesters [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 14].",search_documents,academic_helpdesk,176.2,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q05,policy,Within how many days must I apply for a make-up examination and to whom?,"You must apply for a make-up examination within ten days from the date of the missed examination. The application should be made to the Dean (Academics) through the course instructor. [Source: Rules and Regulations for PG Programmes (enrolled from July 2022 onwards), p. 13]",search_documents,academic_helpdesk,142.1,,1,0,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"A UG student can take a maximum of 10 days of short leave on medical grounds during the semester. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 17]",search_documents,academic_helpdesk,570.8,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q07,policy,How many grade points is an A- grade worth?,"An A- grade is worth 9 grade points [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 7].",search_documents,academic_helpdesk,332.2,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"A general category B.Tech student must earn a minimum of 80 credits by the end of the second semester to continue in the program [Source: Academic Regulations (students enrolled from July 2020 onwards), p. 17].",search_documents,academic_helpdesk,323.2,,0,0,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q09,policy,What is the maximum number of credits I can register for in the summer term?,"The maximum number of credits permitted for an undergraduate student in a semester is 25. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 15]",search_documents,academic_helpdesk,337.8,,0,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q10,policy,Is branch change allowed for B.Tech students admitted in 2026?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,24.8,,0,0,0,1,0,,0,,
+single_qwen3-8b,single,qwen3:8b,1,Q11,policy,What happens if a student is absent for four or more weeks in a semester?,"If a student is absent for four or more weeks in a semester, it will result in automatic withdrawal from that semester. This applies regardless of whether the absence is sanctioned or not. The student's registration will be withdrawn for all courses in the semester. [Source: Circular: Amendment in the Attendance Policy (08 July 2024; from Sem I AY 2024-25), p. 1]",search_documents,academic_helpdesk,603.8,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q12,policy,How many total credits are required for the B.Tech. in Chemical Engineering under the latest curriculum?,"The B.Tech. in Chemical Engineering requires a total of 153 credits for the award of the degree. [Source: B.Tech Chemical Engineering Programme Course Curriculum (2026), p. 4]",search_documents,academic_helpdesk,405.9,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q13,schedule,What is the slot for the course Autonomous Systems?,"The slot for the course Autonomous Systems (CSL7570) is ""E"". [Source: Course & Timetable list (data/csv/courses.csv)]",lookup_course,academic_helpdesk,76.7,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q14,schedule,When are the Minor examinations in Semester I of 2026-27?,"The Minor examinations in Semester I of 2026-27 are scheduled from 21-22 May 2026 [Source: Academic Calendar Summer Term 2026, p. 1].",search_documents,academic_helpdesk,456.3,,0,0,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q15,schedule,When are the Major examinations for Semester I 2026-27?,"The Major examinations for Semester I 2026-27 are scheduled from 12-14 June 2026 [Source: Academic Calendar Summer Term 2026, p. 1].",search_documents,academic_helpdesk,429.4,,0,0,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q16,schedule,When do classes begin for Semester II of 2026-27?,"Classes for Semester II of 2026-27 begin on 1 January 2027. [Source: Academic Calendar AY 2026-27, p. 4]",search_documents,academic_helpdesk,678.8,,1,1,1,0,1,,1,,0
+single_qwen3-8b,single,qwen3:8b,1,Q17,schedule,What is the last date to request course withdrawal in Semester I 2026-27?,"The last date to request course withdrawal in Semester I 2026-27 is 1 October 2026 [Source: Academic Calendar AY 2026-27, p. 1].",search_documents,academic_helpdesk,308.4,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q18,schedule,How many 400 level electives have been floated by the Humanities department in this semester?,"The Humanities department has floated 6 electives at the 400 level in this semester. The courses are: Introduction to Philosophy, Fundamentals of Logic, Critical Thinking, Theories of Justice, Gandhian Thought, and Role of Technology in Development. [Source: Course & Timetable list (data/csv/courses.csv)]",count_electives,academic_helpdesk,104.8,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q19,schedule,Who teaches Mathematics I (MAL1010) and what is its slot?,"Kirankumar Hiremath teaches Mathematics I (MAL1010), and the slot is N. [Source: Course & Timetable list (data/csv/courses.csv)]",lookup_course,academic_helpdesk,68.9,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q20,schedule,When is the semester break in Semester I 2026-27?,"The semester break in Semester I 2026-27 is from 2 to 8 November 2026, Monday to Sunday [Source: Academic Calendar AY 2026-27, p. 2].",search_documents,academic_helpdesk,435.0,,1,1,1,0,1,,1,,
 single_qwen3-8b,single,qwen3:8b,1,Q21,email,Write an email to the course instructor of CSL7570 that I need leave for 2 days.,"This is a draft and has NOT been sent.  
 
 To: csl7570.instructor@iitj.ac.in  
@@ -27,5 +252,94 @@ Name
 Roll No.: Roll Number  
 IIT Jodhpur  
 
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",draft_email,academic_helpdesk,487.1,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q22,email,Draft an email to the instructor of MAL1010 asking for permission to take the make-up exam for the Minor because I was hospitalised.,"This is a draft and has NOT been sent.  
+
+To: k.r.hiremath@iitj.ac.in  
+Subject: Request for permission to take make-up examination - MAL1010  
+Body:  
+Dear Prof. Kirankumar Hiremath,  
+
+I could not appear for the examination of MAL1010 - Mathematics I due to the following reason: I was hospitalised and unable to take the Minor exam.  
+
+I kindly request your permission and recommendation to take the make-up examination. I will attach the required medical certificate / supporting documents.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",draft_email,academic_helpdesk,197.6,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q23,email,Write a sick leave email to the Chemometrics instructor for 3 days because of fever.,"This is a draft and has NOT been sent.  
+To: chl7310.instructor@iitj.ac.in  
+Subject: Request for leave of absence - CHL7310  
+Body:  
+Dear Sir/Madam,  
+
+I am writing to inform you that I will be unable to attend the classes of CHL7310 - Chemometrics and to request leave for the following: 3 days, 30-31 Oct 2026, fever.  
+
+I will submit the supporting document (e.g. medical certificate) as required, and I will make sure to cover the missed lectures and any assignments.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+John Doe  
+Roll No.: 2026CH1001  
+IIT Jodhpur  
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",draft_email;lookup_course;draft_email,academic_helpdesk,335.3,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q24,email,What is the email ID of the instructor of EEL1010?,The email IDs of the instructors for EEL1010 are rajlaxmichouhan@iitj.ac.in and soumava@iitj.ac.in [Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv)].,get_instructor_email,academic_helpdesk,82.7,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,23.6,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q26,out_of_scope,What is the best way to reach the campus from Jodhpur city center?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,119.7,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q27,out_of_scope,What will the weather be like in Jodhpur tomorrow?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,11.1,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q28,out_of_scope,How do I apply for a hostel room change?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,11.0,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q29,out_of_scope,Who won the last IPL final?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,10.2,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,1,Q30,out_of_scope,Can you write a Python program to sort a list?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,10.7,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q06,policy,How many days of short leave can a UG student take on medical grounds?,"A UG student can take a maximum of 10 days of short leave on medical grounds during the semester. [Source: IIT Jodhpur Academic Regulations - UG and PG (web version incl. branch change update), p. 17]",search_documents,academic_helpdesk,156.7,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q07,policy,How many grade points is an A- grade worth?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,10.9,,0,0,0,1,0,,0,,
+single_qwen3-8b,single,qwen3:8b,2,Q08,policy,How many credits must a general category B.Tech student earn by the end of the second semester to continue in the program?,"A general category B.Tech student must earn a minimum of 80 credits by the end of the second semester to continue in the program [Source: Academic Regulations (students enrolled from July 2020 onwards), p. 17].",search_documents,academic_helpdesk,170.0,,0,0,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q13,schedule,What is the slot for the course Autonomous Systems?,"The slot for the course Autonomous Systems (CSL7570) is ""E"". [Source: Course & Timetable list (data/csv/courses.csv)]",lookup_course,academic_helpdesk,31.7,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q14,schedule,When are the Minor examinations in Semester I of 2026-27?,"The Minor examinations in Semester I of 2026-27 are scheduled from 21-22 May 2026 [Source: Academic Calendar Summer Term 2026, p. 1].",search_documents,academic_helpdesk,228.1,,0,0,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q18,schedule,How many 400 level electives have been floated by the Humanities department in this semester?,"The Humanities department has floated 6 electives at the 400 level in this semester. The courses are: Introduction to Philosophy, Fundamentals of Logic, Critical Thinking, Theories of Justice, Gandhian Thought, and Role of Technology in Development. [Source: Course & Timetable list (data/csv/courses.csv)]",count_electives,academic_helpdesk,52.7,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q21,email,Write an email to the course instructor of CSL7570 that I need leave for 2 days.,"This is a draft and has NOT been sent.  
+
+To: csl7570.instructor@iitj.ac.in  
+Subject: Request for leave of absence - CSL7570  
+Body:  
+Dear Sir/Madam,  
+
+I am writing to inform you that I will be unable to attend the classes of CSL7570 - Autonomous Systems and to request leave for the following: 2 days, 30-31 Oct 2026, fever.  
+
+I will submit the supporting document (e.g. medical certificate) as required, and I will make sure to cover the missed lectures and any assignments.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
 [Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",draft_email,academic_helpdesk,105.8,,1,1,1,0,1,,1,,
-single_qwen3-8b,single,qwen3:8b,1,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,11.0,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q22,email,Draft an email to the instructor of MAL1010 asking for permission to take the make-up exam for the Minor because I was hospitalised.,"This is a draft and has NOT been sent.  
+
+To: k.r.hiremath@iitj.ac.in  
+Subject: Request for permission to take make-up examination - MAL1010  
+
+Dear Prof. Kirankumar Hiremath,  
+
+I could not appear for the examination of MAL1010 - Mathematics I due to the following reason: I was hospitalised and unable to take the Minor exam.  
+
+I kindly request your permission and recommendation to take the make-up examination. I will attach the required medical certificate / supporting documents.  
+
+Thank you for your consideration.  
+
+Yours sincerely,  
+Name  
+Roll No.: Roll Number  
+IIT Jodhpur  
+
+[Source: Course & Timetable list (data/csv/courses.csv); Faculty & Department contacts (data/csv/faculty.csv); IIT Jodhpur Academic Regulations (UG/PG, July 2019 onwards)]",draft_email,academic_helpdesk,97.0,,1,1,1,0,1,,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q25,out_of_scope,What are the available dining options on the campus?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,11.0,,1,,0,1,1,1,1,,
+single_qwen3-8b,single,qwen3:8b,2,Q26,out_of_scope,What is the best way to reach the campus from Jodhpur city center?,"I'm sorry, I don't know the answer to that. It is outside what I can help with, so I have logged your question for the helpdesk staff to answer.",,academic_helpdesk,11.8,,1,,0,1,1,1,1,,

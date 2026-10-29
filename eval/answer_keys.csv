@@ -11,13 +11,13 @@ Q09,8,policy_agent
 Q10,discontinued|not allowed|not permitted|no longer,policy_agent
 Q11,withdraw|cancel,policy_agent
 Q12,153,policy_agent
-Q13,re:slot\W*e\b|re:\be\b slot|re:\*\*e\*\*,schedule_agent
+Q13,re:\bis\W*e\b|re:slot\W*e\b|re:\be\b slot|re:\*\*e\*\*,schedule_agent
 Q14,15 ; 20 ; sep,schedule_agent
 Q15,19 ; 26 ; nov,schedule_agent
 Q16,re:\b0?4\b ; jan,schedule_agent
 Q17,re:\b0?1\b ; oct,schedule_agent
 Q18,6|six,schedule_agent
-Q19,hiremath ; re:slot\W*n\b|re:\*\*n\*\*,schedule_agent
+Q19,hiremath ; re:\bis\W*n\b|re:slot\W*n\b|re:\*\*n\*\*,schedule_agent
 Q20,re:\b0?2\b ; re:\b0?8\b ; nov,schedule_agent
 Q21,csl7570.instructor@iitj.ac.in ; leave ; not been sent|not sent|draft,email_agent
 Q22,k.r.hiremath@iitj.ac.in ; make-up|makeup|make up,email_agent

@@ -1,0 +1,5 @@
+configuration,answers,accuracy_%,in_scope_accuracy_%,groundedness_%,citation_present_%,correct_refusal_%,false_refusal_%,refusals_logged_%,correct_tool_%,correct_routing_%,median_seconds
+Single · Qwen3 8B,30,76.7,70.8,79.2,95.8,100.0,4.2,100.0,96.7,,250.0
+Multi · Qwen3 8B,30,70.0,62.5,58.3,79.2,100.0,16.7,100.0,93.3,100.0,171.0
+Single · Llama 3.1 8B,30,73.3,66.7,58.3,83.3,100.0,4.2,100.0,100.0,,262.0
+Multi · Llama 3.1 8B,30,66.7,58.3,58.3,87.5,100.0,4.2,100.0,100.0,93.3,306.0

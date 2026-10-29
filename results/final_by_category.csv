@@ -1,0 +1,5 @@
+category,Single · Qwen3 8B,Multi · Qwen3 8B,Single · Llama 3.1 8B,Multi · Llama 3.1 8B
+policy,67.0,67.0,75.0,75.0
+schedule,62.0,50.0,62.0,62.0
+email,100.0,75.0,50.0,0.0
+out_of_scope,100.0,100.0,100.0,100.0
