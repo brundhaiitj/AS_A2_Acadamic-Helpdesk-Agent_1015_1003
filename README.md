@@ -9,12 +9,6 @@ rules and regulations, the time table and academic calendar, and drafts emails t
 - **Citations:** every answer cites the document and page it came from
 - Runs on a 16 GB RAM laptop, fully offline after setup
 
-## Project status
-| Part | Owner | Status |
-|---|---|---|
-| Part 1 – documents, CSV data, RAG, tools, single agent, question set | Person 1 | done |
-| Part 2 – multi-agent version, evaluation, model comparison, report | Person 2 | done (subset evaluation, see report) |
-
 ## Setup
 ```bash
 # 1. Install Python 3.12, Git and Ollama, then:
@@ -52,7 +46,7 @@ python eval/run_eval.py --agent single --runs 1 --model qwen3:8b
 python eval/score.py       # results/scored_all.csv (accuracy, groundedness, refusals, tool/routing)
 python eval/analyze.py     # results/summary.md, consistency.csv, chart_*.png
 ```
-Report: `report/report.md`.
+Report: `report/Academic_Helpdesk_Agent_Report.pdf` (editable: `.docx`).
 Switch the LLM: set `HELPDESK_MODEL=llama3.1:8b` (or edit `src/config.py`).
 
 ## Tests
