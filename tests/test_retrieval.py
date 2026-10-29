@@ -11,9 +11,9 @@ import config
 from tools import search_documents
 
 TESTS = [
-    ("attendance requirement to appear in major exam", ["regulations_web_2019_onwards.txt", "regulations_2019_onwards.pdf", "amendment_attendance_policy_2024.pdf", "regulations_ug_2020_bioscience_copy.pdf"]),
+    ("attendance requirement to appear in major exam", ["regulations_web_2019_onwards.txt", "regulations_2019_onwards.pdf", "amendment_attendance_policy_2024.txt", "regulations_ug_2020_bioscience_copy.pdf"]),
     ("open elective credits required for B.Tech degree", ["regulations_web_2019_onwards.txt", "regulations_2019_onwards.pdf", "regulations_ug_2020_bioscience_copy.pdf", "curriculum_btech_cse_2026.pdf", "curriculum_btech_chemical_2026.pdf"]),
-    ("make-up examination application within ten days", ["regulations_web_2019_onwards.txt", "regulations_2019_onwards.pdf", "regulations_ug_2020_bioscience_copy.pdf", "regulations_pg_2022_onwards.pdf", "amendment_examination_policy_2024.pdf"]),
+    ("make-up examination application within ten days", ["regulations_web_2019_onwards.txt", "regulations_2019_onwards.pdf", "regulations_ug_2020_bioscience_copy.pdf", "regulations_pg_2022_onwards.pdf", "amendment_examination_policy_2024.txt"]),
     ("minor examination dates semester I 2026-27", ["academic_calendar_2026_27.pdf"]),
     ("major semester examination November 2026", ["academic_calendar_2026_27.pdf"]),
     ("branch change discontinued from academic year 2026-27", ["btech_registration_branch_change_faq.txt", "regulations_web_2019_onwards.txt"]),
