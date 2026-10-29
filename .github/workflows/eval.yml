@@ -1,0 +1,65 @@
+name: full-eval
+on:
+  push:
+    branches: [eval-run]
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -r requirements.txt
+      - run: curl -fsSL https://ollama.com/install.sh | sh
+      - run: |
+          nohup ollama serve > /tmp/ollama.log 2>&1 &
+          sleep 5; ollama pull nomic-embed-text
+      - run: python src/ingest.py
+      - run: nproc; free -g
+      - uses: actions/upload-artifact@v4
+        with: {name: chroma, path: chroma_db, include-hidden-files: true}
+  eval:
+    needs: ingest
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        cfg: ["single qwen3:8b", "multi qwen3:8b", "single llama3.1:8b", "multi llama3.1:8b"]
+        ids: ["Q01,Q02,Q03,Q04,Q05", "Q06,Q07,Q08,Q09,Q10", "Q11,Q12,Q13,Q14,Q15",
+              "Q16,Q17,Q18,Q19,Q20", "Q21,Q22,Q23,Q24,Q25", "Q26,Q27,Q28,Q29,Q30"]
+    env:
+      HELPDESK_TIMEOUT: "1500"
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with: {name: chroma, path: chroma_db}
+      - run: curl -fsSL https://ollama.com/install.sh | sh
+      - name: models
+        run: |
+          set -- ${{ matrix.cfg }}
+          nohup ollama serve > /tmp/ollama.log 2>&1 &
+          sleep 5; ollama pull nomic-embed-text; ollama pull $2
+          nproc; free -g
+      - name: run
+        run: |
+          set -- ${{ matrix.cfg }}
+          rm -f logs/unanswered_log.csv results/raw_*.csv
+          python eval/run_eval.py --agent $1 --model $2 --runs 1 --ids ${{ matrix.ids }}
+      - name: name
+        if: always()
+        id: nm
+        run: echo "n=$(echo '${{ matrix.cfg }}-${{ matrix.ids }}' | tr ' :,' '___')" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: res-${{ steps.nm.outputs.n }}
+          path: |
+            results/raw_*.csv
+            logs/unanswered_log.csv
