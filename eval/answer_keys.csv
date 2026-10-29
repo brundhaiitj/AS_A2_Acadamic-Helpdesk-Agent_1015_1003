@@ -1,0 +1,31 @@
+id,must_contain,expected_agent
+Q01,75 ; no longer|not linked|allowed to appear|can appear|permitted to appear,policy_agent
+Q02,10 credits|12 credits|10 open|12 open|10 OE|12 OE,policy_agent
+Q03,12 ; 25,policy_agent
+Q04,14,policy_agent
+Q05,ten|10 ; Dean,policy_agent
+Q06,10,policy_agent
+Q07,9,policy_agent
+Q08,18,policy_agent
+Q09,8,policy_agent
+Q10,discontinued|not allowed|not permitted|no longer,policy_agent
+Q11,withdraw|cancel,policy_agent
+Q12,153,policy_agent
+Q13,re:slot\W*e\b|re:\be\b slot|re:\*\*e\*\*,schedule_agent
+Q14,15 ; 20 ; sep,schedule_agent
+Q15,19 ; 26 ; nov,schedule_agent
+Q16,re:\b0?4\b ; jan,schedule_agent
+Q17,re:\b0?1\b ; oct,schedule_agent
+Q18,6|six,schedule_agent
+Q19,hiremath ; re:slot\W*n\b|re:\*\*n\*\*,schedule_agent
+Q20,re:\b0?2\b ; re:\b0?8\b ; nov,schedule_agent
+Q21,csl7570.instructor@iitj.ac.in ; leave ; not been sent|not sent|draft,email_agent
+Q22,k.r.hiremath@iitj.ac.in ; make-up|makeup|make up,email_agent
+Q23,chl7310.instructor@iitj.ac.in ; 3|three,email_agent
+Q24,rajlaxmichouhan@iitj.ac.in ; soumava@iitj.ac.in,email_agent
+Q25,REFUSE,helpdesk_orchestrator
+Q26,REFUSE,helpdesk_orchestrator
+Q27,REFUSE,helpdesk_orchestrator
+Q28,REFUSE,helpdesk_orchestrator
+Q29,REFUSE,helpdesk_orchestrator
+Q30,REFUSE,helpdesk_orchestrator
